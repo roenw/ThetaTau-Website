@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Theta Tau ASU | Delta Gamma Chapter",
+  title: "ASU Theta Tau - Delta Gamma Chapter",
   description: "Theta Tau, Delta Gamma chapter is a coed professional engineering fraternity at Arizona State University in Tempe, AZ.",
 };
 
