@@ -28,23 +28,29 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-black bg-white fixed nav">
+    <div className="flex justify-between items-center w-full h-16 px-4 text-black bg-white fixed nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
-        <h1 className="text-5xl font-signature ml-2 lg:ml-20">
+        <div className="font-signature ml-2 lg:ml-20">
           <a
             className="link-underline link-underline-black inline"
             href="/"
             rel="noreferrer"
           >
             <Image
+              className="inline-block"
               src="/crest-transparent.png"
-              width={70}
-              height={70}
+              width={50}
+              height={50}
               alt="Theta Tau Fraternity crest"
             />
+            <div className="inline-block justify-center items-start">
+              <span className="pl-2 align-middle font-medium text-xl">
+                Theta Tau Fraternity
+              </span>
+            </div>
           </a>
-        </h1>
+        </div>
       </div>
 
       <ul className="hidden md:flex xl:mr-30 lg:mr-20">
