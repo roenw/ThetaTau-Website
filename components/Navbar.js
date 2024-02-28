@@ -24,6 +24,21 @@ const Navbar = () => {
       id: 3,
       linkname: "Rush",
       target: "/rush"
+    },
+    {
+      id: 4,
+      linkname: "Professionalism",
+      target: "/professionalism"
+    },
+    {
+      id: 5,
+      linkname: "Brotherhood",
+      target: "/brotherhood",
+    },
+    {
+      id: 6,
+      linkname: "Service",
+      target: "/service"
     }
   ];
 
@@ -38,16 +53,21 @@ const Navbar = () => {
             rel="noreferrer"
           >
             <Image
-              className="inline-block"
+              className="inline-block justify-center"
               src="/crest-transparent.png"
               width={50}
               height={50}
               alt="Theta Tau Fraternity crest"
             />
-            <div className="inline-block justify-center items-start">
-              <span className="pl-2 align-middle font-medium text-xl">
-                Theta Tau Fraternity
-              </span>
+            <div className="inline-block justify-center items-start absolute">
+              <div className="grid">
+                <span className="pl-2 align-middle font-semibold text-red-700 text-xl">
+                  Theta Tau Fraternity
+                </span>
+                <span className="pl-2 align-middle font-extralight text-m">
+                  Delta Gamma Chapter
+                </span>
+              </div>
             </div>
           </a>
         </div>
@@ -57,7 +77,7 @@ const Navbar = () => {
         {links.map(({ id, linkname, target }) => (
           <li
             key={id}
-            className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-black duration-100 link-underline"
+            className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-700 hover:scale-105 hover:text-black hover:underline duration-100 link-underline"
           >
             <Link href={target}>{linkname}</Link>
           </li>
