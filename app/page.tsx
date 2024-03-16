@@ -3,12 +3,18 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <div style={{width: '100%', height: '100%', position: 'relative'}}>
+      <div 
+        style={{
+          width: '100%', 
+          height: '600px', 
+          position: 'relative', 
+          overflow: "hidden"
+        }}
+      >
         <Image
-          // className="object-fill"
           src="/TempeSkyline.jpg"
-          layout='fill'
-          objectFit='contain'
+          layout="fill"
+          objectFit="cover"
           alt="Tempe Picture"
         />
       </div>
