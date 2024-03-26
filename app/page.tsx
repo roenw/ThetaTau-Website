@@ -5,18 +5,48 @@ export default function Home() {
     <main>
       <div 
         style={{
-          width: '100%', 
-          height: '600px', 
           position: 'relative', 
-          overflow: "hidden"
+          width: '100%', 
+          height: '600px',
         }}
       >
+        {/* Image */}
         <Image
-          src="/TempeSkyline.jpg"
-          layout="fill"
-          objectFit="cover"
-          alt="Tempe Picture"
+          src="/TempeSkyline.jpg" // Image source path
+          layout="fill" // Fill the container
+          objectFit="cover" // Cover the container while maintaining aspect ratio
+          alt="Tempe Picture" // Alt text for accessibility
+          style={{ filter: 'brightness(50%)' }} // Lower opacity to 70%
         />
+        {/* Text overlay */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '200px', // Adjust as needed
+            left: '8vw', // Adjust as needed
+            color: 'white',
+            fontSize: '75px', // Relative to viewport width (adjust as needed)
+            fontFamily: 'Garamond', // Professional font family
+            fontWeight: 'bold',
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+          }}
+        >
+          Theta Tau
+        </div>
+
+        {/* Tagline */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '300px', // Relative to viewport height (adjust as needed)
+            left: '8vw', // Relative to viewport width (adjust as needed)
+            color: 'white',
+            fontFamily: 'Garamond', // Professional font family
+            fontSize: '30px', // Relative to viewport width (adjust as needed)
+          }}
+        >
+          Professional Co-ed Engineering Fraternity
+        </div>
       </div>
     </main>
   );
