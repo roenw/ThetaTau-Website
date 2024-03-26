@@ -24,10 +24,10 @@ export default function Home() {
             style={{
               position: 'relative',
               top: '200px', // Adjust as needed
-              left: '5.5rem',
+              left: '5vw',
               color: 'white',
               fontFamily: 'Cambria', // Professional font family
-              fontWeight: 'bold',
+              fontWeight: 'bolder',
               backgroundColor: 'rgba(0, 0, 0, 0)',
             }}
           >
@@ -36,13 +36,13 @@ export default function Home() {
 
           {/* Tagline */}
           <div
+            className="text-[30px] lg:text[32px]"
             style={{
               position: 'relative',
               top: '185px', // Relative to viewport height (adjust as needed)
-              left: '5.5rem',
+              left: '5vw',
               color: 'white',
               fontFamily: 'Cambria', // Professional font family
-              fontSize: '32px', // Relative to viewport width (adjust as needed)
             }}
           >
             Professional Co-ed Engineering Fraternity at Arizona State University
