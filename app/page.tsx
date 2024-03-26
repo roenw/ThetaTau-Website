@@ -10,43 +10,44 @@ export default function Home() {
           height: '600px',
         }}
       >
-        {/* Image */}
+        {/* TempeSkylineImage */}
         <Image
           src="/TempeSkyline.jpg" // Image source path
           layout="fill" // Fill the container
           objectFit="cover" // Cover the container while maintaining aspect ratio
           alt="Tempe Picture" // Alt text for accessibility
-          style={{ filter: 'brightness(38%)' }} // Lower opacity to 70%
+          style={{ filter: 'brightness(60%)' }} // Lower opacity to 70%
         />
-          {/* Text overlay */}
-          <div
-            className="text-[70px] lg:text-[85px]"
-            style={{
-              position: 'relative',
-              top: '200px', // Adjust as needed
-              left: '5vw',
-              color: 'white',
-              fontFamily: 'Cambria', // Professional font family
-              fontWeight: 'bolder',
-              backgroundColor: 'rgba(0, 0, 0, 0)',
-            }}
-          >
-            Theta Tau
-          </div>
+        {/* Theta Tau Text */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '200px', // Adjust as needed
+            left: '8vw', // Adjust as needed
+            color: 'white',
+            fontSize: '75px', // Relative to viewport width (adjust as needed)
+            fontFamily: 'Garamond', // Professional font family
+            fontWeight: 'bold',
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+          }}
+        >
+          Theta Tau
+        </div>
 
-          {/* Tagline */}
-          <div
-            className="text-[30px] lg:text[32px]"
-            style={{
-              position: 'relative',
-              top: '185px', // Relative to viewport height (adjust as needed)
-              left: '5vw',
-              color: 'white',
-              fontFamily: 'Cambria', // Professional font family
-            }}
-          >
-            Professional Co-ed Engineering Fraternity at Arizona State University
-          </div>
+        {/* Chapter Name and Location */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '300px', // Relative to viewport height (adjust as needed)
+            left: '8vw', // Relative to viewport width (adjust as needed)
+            color: 'white',
+            fontFamily: 'Garamond', // Professional font family
+            fontSize: '24px', // Relative to viewport width (adjust as needed)
+          }}
+        >
+          Professional Co-ed Engineering Fraternity<br></br>
+          Delta Gamma Chapter at Arizona State University
+        </div>
       </div>
     </main>
   );
