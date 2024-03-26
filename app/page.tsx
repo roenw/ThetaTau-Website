@@ -20,10 +20,11 @@ export default function Home() {
         />
           {/* Text overlay */}
           <div
-            className="text-center text-[75px] lg:text-[90px] mx-15"
+            className="text-[70px] lg:text-[85px]"
             style={{
               position: 'relative',
               top: '200px', // Adjust as needed
+              left: '5.5rem',
               color: 'white',
               fontFamily: 'Cambria', // Professional font family
               fontWeight: 'bold',
@@ -35,10 +36,10 @@ export default function Home() {
 
           {/* Tagline */}
           <div
-            className="text-center mx-15"
             style={{
               position: 'relative',
               top: '185px', // Relative to viewport height (adjust as needed)
+              left: '5.5rem',
               color: 'white',
               fontFamily: 'Cambria', // Professional font family
               fontSize: '32px', // Relative to viewport width (adjust as needed)
