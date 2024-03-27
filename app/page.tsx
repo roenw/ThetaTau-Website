@@ -7,12 +7,12 @@ export default function Home() {
         style={{
           position: 'relative', 
           width: '100%', 
-          height: '600px',
+          height: '800px',
         }}
       >
         {/* TempeSkylineImage */}
         <Image
-          src="/TempeSkyline.jpg" // Image source path
+          src="/SparkyPic.jpg" // Image source path
           layout="fill" // Fill the container
           objectFit="cover" // Cover the container while maintaining aspect ratio
           alt="Tempe Picture" // Alt text for accessibility
@@ -22,7 +22,7 @@ export default function Home() {
         <div
           style={{
             position: 'absolute',
-            top: '200px', // Adjust as needed
+            top: '300px', // Adjust as needed
             left: '8vw', // Adjust as needed
             color: 'white',
             fontSize: '75px', // Relative to viewport width (adjust as needed)
@@ -38,17 +38,19 @@ export default function Home() {
         <div
           style={{
             position: 'absolute',
-            top: '300px', // Relative to viewport height (adjust as needed)
+            top: '400px', // Relative to viewport height (adjust as needed)
             left: '8vw', // Relative to viewport width (adjust as needed)
             color: 'white',
             fontFamily: 'Garamond', // Professional font family
             fontSize: '24px', // Relative to viewport width (adjust as needed)
+            backgroundColor: 'rgba(0, 0, 0, 0)',
           }}
         >
           Professional Co-ed Engineering Fraternity<br></br>
           Delta Gamma Chapter at Arizona State University
         </div>
       </div>
+      Professionalism
     </main>
   );
 }
