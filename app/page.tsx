@@ -26,7 +26,7 @@ export default function Home() {
             left: '8vw', // Adjust as needed
             color: 'white',
             fontSize: '75px', // Relative to viewport width (adjust as needed)
-            fontFamily: 'Garamond', // Professional font family
+            fontFamily: 'Cambria', // Professional font family
             fontWeight: 'bold',
             backgroundColor: 'rgba(0, 0, 0, 0)',
           }}
@@ -41,7 +41,7 @@ export default function Home() {
             top: '400px', // Relative to viewport height (adjust as needed)
             left: '8vw', // Relative to viewport width (adjust as needed)
             color: 'white',
-            fontFamily: 'Garamond', // Professional font family
+            fontFamily: 'Cambria', // Professional font family
             fontSize: '24px', // Relative to viewport width (adjust as needed)
             backgroundColor: 'rgba(0, 0, 0, 0)',
           }}
@@ -50,7 +50,6 @@ export default function Home() {
           Delta Gamma Chapter at Arizona State University
         </div>
       </div>
-      Professionalism
     </main>
   );
 }
