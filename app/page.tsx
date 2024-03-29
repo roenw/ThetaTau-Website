@@ -50,6 +50,21 @@ export default function Home() {
           Delta Gamma Chapter at Arizona State University
         </div>
       </div>
+      <div>
+        <div
+          style={{
+            position: 'relative',
+            top: '50px', // Relative to viewport height (adjust as needed)
+            left: '25%', // Relative to viewport width (adjust as needed)
+            color: 'black',
+            fontFamily: 'Cambria', // Professional font family
+            fontSize: '24px', // Relative to viewport width (adjust as needed)
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+          }}
+        >
+          Pillar
+        </div>
+      </div>
     </main>
   );
 }
