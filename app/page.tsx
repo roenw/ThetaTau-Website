@@ -10,7 +10,7 @@ export default function Home() {
           height: '800px',
         }}
       >
-        {/* TempeSkylineImage */}
+        {/* Home Page Picture */}
         <Image
           src="/SparkyPic.jpg" // Image source path
           layout="fill" // Fill the container
@@ -54,6 +54,7 @@ export default function Home() {
         <div
           style={{
             position: 'relative',
+            width: '40px',
             top: '50px', // Relative to viewport height (adjust as needed)
             left: '25%', // Relative to viewport width (adjust as needed)
             color: 'black',
