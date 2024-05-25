@@ -5,10 +5,15 @@ This repository holds the code for the ΔΓ chapter website modernization effort
 ## Site Structure
 
 └── Homepage/
+
     ├── About
+    
     ├── Rush
+    
     ├── Professionalism
+    
     ├── Brotherhood
+    
     └── Service
 
 
