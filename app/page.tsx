@@ -16,7 +16,7 @@ export default function Home() {
           layout="fill" // Fill the container
           objectFit="cover" // Cover the container while maintaining aspect ratio
           alt="Tempe Picture" // Alt text for accessibility
-          style={{ filter: 'brightness(60%)' }} // Lower opacity to 70%
+          style={{ filter: 'brightness(60%)', zIndex: -1 }} // Lower opacity to 70%
         />
         {/* Theta Tau Text */}
         <div
@@ -41,29 +41,13 @@ export default function Home() {
             top: '400px', // Relative to viewport height (adjust as needed)
             left: '8vw', // Relative to viewport width (adjust as needed)
             color: 'white',
-            fontFamily: 'Cambria', // Professional font family
-            fontSize: '24px', // Relative to viewport width (adjust as needed)
             backgroundColor: 'rgba(0, 0, 0, 0)',
           }}
         >
-          Professional Co-ed Engineering Fraternity<br></br>
-          Delta Gamma Chapter at Arizona State University
-        </div>
-      </div>
-      <div>
-        <div
-          style={{
-            position: 'relative',
-            width: '40px',
-            top: '50px', // Relative to viewport height (adjust as needed)
-            left: '25%', // Relative to viewport width (adjust as needed)
-            color: 'black',
-            fontFamily: 'Cambria', // Professional font family
-            fontSize: '24px', // Relative to viewport width (adjust as needed)
-            backgroundColor: 'rgba(0, 0, 0, 0)',
-          }}
-        >
-          Pillar
+          <p>
+            Professional Co-ed Engineering Fraternity<br></br>
+            Delta Gamma Chapter at Arizona State University
+          </p>
         </div>
       </div>
     </main>

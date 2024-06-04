@@ -37,3 +37,14 @@ body {
     text-wrap: balance;
   }
 }
+
+h1 {
+  font-family: var(--font-inter);
+  color: black;
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif
+}

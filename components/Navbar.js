@@ -93,7 +93,7 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen to-gray-800 text-gray-500">
+        <ul style={{backgroundColor: "white", zIndex: 5}}  className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen to-gray-800 text-gray-500">
           {links.map(({ id, linkname, target }) => (
             <li
               key={id}

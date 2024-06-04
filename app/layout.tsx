@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "../components/Navbar.js";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap", variable: '--font-inter' });
+const poppins = Poppins({ subsets: ["latin"], display: "swap", variable: '--font-poppins', weight: "300" });
 
 export const metadata: Metadata = {
   title: "ASU Theta Tau - Delta Gamma Chapter",
