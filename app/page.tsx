@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <div 
+      <div
         style={{
-          position: 'relative', 
-          width: '100%', 
-          height: '800px',
+          position: "relative",
+          width: "100%",
+          height: "800px",
         }}
       >
         {/* Home Page Picture */}
@@ -16,19 +16,19 @@ export default function Home() {
           layout="fill" // Fill the container
           objectFit="cover" // Cover the container while maintaining aspect ratio
           alt="Tempe Picture" // Alt text for accessibility
-          style={{ filter: 'brightness(60%)', zIndex: -1 }} // Lower opacity to 70%
+          style={{ filter: "brightness(60%)", zIndex: -1 }} // Lower opacity to 70%
         />
         {/* Theta Tau Text */}
         <div
           style={{
-            position: 'absolute',
-            top: '300px', // Adjust as needed
-            left: '8vw', // Adjust as needed
-            color: 'white',
-            fontSize: '75px', // Relative to viewport width (adjust as needed)
-            fontFamily: 'Cambria', // Professional font family
-            fontWeight: 'bold',
-            backgroundColor: 'rgba(0, 0, 0, 0)',
+            position: "absolute",
+            top: "300px", // Adjust as needed
+            left: "8vw", // Adjust as needed
+            color: "white",
+            fontSize: "75px", // Relative to viewport width (adjust as needed)
+            fontFamily: "Cambria", // Professional font family
+            fontWeight: "bold",
+            backgroundColor: "rgba(0, 0, 0, 0)",
           }}
         >
           Theta Tau
@@ -37,11 +37,11 @@ export default function Home() {
         {/* Chapter Name and Location */}
         <div
           style={{
-            position: 'absolute',
-            top: '400px', // Relative to viewport height (adjust as needed)
-            left: '8vw', // Relative to viewport width (adjust as needed)
-            color: 'white',
-            backgroundColor: 'rgba(0, 0, 0, 0)',
+            position: "absolute",
+            top: "400px", // Relative to viewport height (adjust as needed)
+            left: "8vw", // Relative to viewport width (adjust as needed)
+            color: "white",
+            backgroundColor: "rgba(0, 0, 0, 0)",
           }}
         >
           <p>

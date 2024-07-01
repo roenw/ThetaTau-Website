@@ -8,7 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark Mode 
@@ -46,5 +45,5 @@ h1 {
 
 p {
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif
+  /* font-family: Arial, Helvetica, sans-serif */
 }

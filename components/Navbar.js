@@ -7,7 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
 
   const links = [
     {
@@ -23,23 +23,13 @@ const Navbar = () => {
     {
       id: 3,
       linkname: "Rush",
-      target: "/rush"
+      target: "/rush",
     },
     {
       id: 4,
-      linkname: "Professionalism",
-      target: "/professionalism"
+      linkname: "Pillars",
+      target: "/pillars",
     },
-    {
-      id: 5,
-      linkname: "Brotherhood",
-      target: "/brotherhood",
-    },
-    {
-      id: 6,
-      linkname: "Service",
-      target: "/service"
-    }
   ];
 
   return (
@@ -93,7 +83,10 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul style={{backgroundColor: "white", zIndex: 5}}  className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen to-gray-800 text-gray-500">
+        <ul
+          style={{ backgroundColor: "white", zIndex: 5 }}
+          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen to-gray-800 text-gray-500"
+        >
           {links.map(({ id, linkname, target }) => (
             <li
               key={id}
