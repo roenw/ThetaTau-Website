@@ -34,13 +34,11 @@ export default function Pillars() {
               Professionalism
             </h1>
             <p className="text-[#374151] text-justify text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              minus, voluptatum repudiandae tempore blanditiis ipsam, modi
-              repellendus molestias laboriosam aspernatur facere delectus
-              tenetur eum hic aliquam ut repellat, nam et necessitatibus.
-              Dignissimos reprehenderit, voluptatum optio ratione vero veniam
-              consectetur illo eligendi voluptate, quia illum, sed rerum unde
-              est magnam atque.
+              In Theta Tau we are dedicated to growing our members both in and
+              outside the classroom, and jump starting our members’ careers.
+              We seek to develop our members into leaders in engineering and our
+              community, and building personal and professional networks which
+              will last a lifetime.
             </p>
           </div>
         </div>
@@ -49,13 +47,12 @@ export default function Pillars() {
           <div className="w-[60%] h-[100%] flex flex-col items-start justify-center gap-5 font-sans">
             <h1 className="text-[#b91c1b] text-5xl font-bold">Brotherhood</h1>
             <p className="text-[#374151] text-justify text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              minus, voluptatum repudiandae tempore blanditiis ipsam, modi
-              repellendus molestias laboriosam aspernatur facere delectus
-              tenetur eum hic aliquam ut repellat, nam et necessitatibus.
-              Dignissimos reprehenderit, voluptatum optio ratione vero veniam
-              consectetur illo eligendi voluptate, quia illum, sed rerum unde
-              est magnam atque.
+              Joining Theta Tau is like joining a family of over 40,000 honest, talented, and
+              dependable men and women who all have an engineering mindset. You will form bonds
+              and friendships which will last your entire life. You have friends you have never
+              met in any city you move to. Your brothers will be there when times are hard, and
+              your brothers will be there at your wedding. Your brothers will always be there, because
+              your brothers in Theta Tau are your family.
             </p>
           </div>
           <div className="w-[40%] h-[100%] bg-red-100 relative">
@@ -80,13 +77,10 @@ export default function Pillars() {
           <div className="w-[60%] h-[100%] flex flex-col items-start justify-center gap-5 font-sans">
             <h1 className="text-[#b91c1b] text-5xl font-bold">Service</h1>
             <p className="text-[#374151] text-justify text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              minus, voluptatum repudiandae tempore blanditiis ipsam, modi
-              repellendus molestias laboriosam aspernatur facere delectus
-              tenetur eum hic aliquam ut repellat, nam et necessitatibus.
-              Dignissimos reprehenderit, voluptatum optio ratione vero veniam
-              consectetur illo eligendi voluptate, quia illum, sed rerum unde
-              est magnam atque.
+              Our members love giving back to the community. Every year
+              there are national efforts where brothers from across the nation
+              unite to help our communities. These efforts include activities like
+              Habitat for Humanity and participating in clothing and food drives.
             </p>
           </div>
         </div>
