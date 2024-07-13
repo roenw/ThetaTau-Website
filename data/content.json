@@ -1,0 +1,23 @@
+{
+  "pillars": {
+    "title": "Pillars",
+    "subtitle": "Core Principles of Theta Tau"
+  },
+  "sections": [
+    {
+      "title": "Professionalism",
+      "description": "In Theta Tau we are dedicated to growing our members both in and outside the classroom, and jump starting our members’ careers. We seek to develop our members into leaders in engineering and our community, and building personal and professional networks which will last a lifetime.",
+      "image": "/BoringProfessionalPic.jpg"
+    },
+    {
+      "title": "Brotherhood",
+      "description": "Joining Theta Tau is like joining a family of over 40,000 honest, talented, and dependable men and women who all have an engineering mindset. You will form bonds and friendships which will last your entire life. You have friends you have never met in any city you move to. Your brothers will be there when times are hard, and your brothers will be there at your wedding. Your brothers will always be there, because your brothers in Theta Tau are your family.",
+      "image": "/Brotherhood.jpg"
+    },
+    {
+      "title": "Service",
+      "description": "Our members love giving back to the community. Every year there are national efforts where brothers from across the nation unite to help our communities. These efforts include activities like Habitat for Humanity and participating in clothing and food drives.",
+      "image": "/HomePagePicture.jpg"
+    }
+  ]
+}
