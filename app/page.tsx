@@ -7,12 +7,12 @@ export default function Home() {
         style={{
           position: "relative",
           width: "100%",
-          height: "800px",
+          height: "900px",
         }}
       >
         {/* Home Page Picture */}
         <Image
-          src="/SparkyPic.jpg" // Image source path
+          src="/TauGamma-Gradient.jpg" // Image source path
           layout="fill" // Fill the container
           objectFit="cover" // Cover the container while maintaining aspect ratio
           alt="Tempe Picture" // Alt text for accessibility
