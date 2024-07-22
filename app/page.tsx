@@ -11,6 +11,7 @@ const bungee = Bungee({
 export default function Home() {
   return (
     <main>
+      {/* Hero Image */}
       <div
         style={{
           position: "relative",
@@ -23,7 +24,7 @@ export default function Home() {
           src="/TauGamma-Gradient.jpg" // Image source path
           layout="fill" // Fill the container
           objectFit="cover" // Cover the container while maintaining aspect ratio
-          alt="Tempe Picture" // Alt text for accessibility
+          alt="ASU Theta Tau members standing in professional dress" // Alt text for accessibility
           style={{ filter: "brightness(60%)", zIndex: -1 }} // Lower opacity to 70%
         />
         {/* Theta Tau Text */}
@@ -57,7 +58,59 @@ export default function Home() {
             backgroundColor: "rgba(0, 0, 0, 0)"
           }}
         >
+        </div>
+      </div>
 
+      {/* Who We Are Section */}
+      <div
+        className="py-10 bg-black"
+      >
+        <h1 className={`${bungee.className} antialiased text-tt-dark-red text-center font-weight-bold pb-10`}>
+          Who We Are
+        </h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="px-[60px] lg:px-[100px]">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "left",
+                alignItems: "center"
+              }}
+            >
+              <Image
+                className="hidden pr-5 lg:inline"
+                src="/white_bar.png"
+                alt=""
+                width="200"
+                height="15"
+              />
+              <span className="ml-auto mr-auto lg:ml-0 text-white text-[20px]">
+                Since 1904
+              </span>
+            </div>
+            <h1 className={`${bungee.className} text-center lg:text-left text-5xl lg:text-[58px] antialiased text-tt-dark-red font-weight-bold pb-4`}>
+                We Are Theta Tau
+            </h1>
+            <p className="text-white pb-8">
+              Theta Tau is a co-ed professional engineering fraternity here at Arizona State University. We are a close knit brotherhood that encourages our members to excel professionally and give back to the surrounding community.
+            </p>
+              <a href="/rush" className="tt-button-primary hover:bg-tt-dark-red hover:text-tt-gold mr-5">
+                Rush Theta Tau
+              </a>
+              <a href="/about" className="tt-button-secondary hover:bg-tt-gold hover:text-black">
+                Learn More
+              </a>
+          </div>
+          <div>
+            <Image
+              className="ml-auto mr-auto"
+              src="/Polaroids.png"
+              width="583"
+              height="454"
+              alt="Polaroid photos of Theta Tau members"
+            />
+          </div>
         </div>
       </div>
     </main>

@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'tt-dark-red': '#ad2831'
+        'tt-dark-red': '#ad2831',
+        'tt-gold': '#e3b11a'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
