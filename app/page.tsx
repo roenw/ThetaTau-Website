@@ -1,4 +1,12 @@
 import Image from "next/image";
+import { Bungee } from "next/font/google";
+
+const bungee = Bungee({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-bungee",
+  weight: "400"
+});
 
 export default function Home() {
   return (
@@ -23,31 +31,33 @@ export default function Home() {
           style={{
             position: "absolute",
             top: "300px", // Adjust as needed
-            left: "8vw", // Adjust as needed
-            color: "white",
+            left: "50%",
+            transform: "translateX(-50%)",
+            textAlign: "center",
             fontSize: "75px", // Relative to viewport width (adjust as needed)
-            fontFamily: "Cambria", // Professional font family
-            fontWeight: "bold",
-            backgroundColor: "rgba(0, 0, 0, 0)",
+            lineHeight: "80%"
           }}
         >
-          Theta Tau
+          <h1 className={`${bungee.className} antialiased text-tt-dark-red font-weight-bold`}>
+            Forging Future Engineers
+          </h1>
+          <p className="pt-10 text-white leading-tight">
+            Nation's Foremost Professional Engineering Fraternity
+          </p>
         </div>
 
         {/* Chapter Name and Location */}
         <div
+          className="lg:top-[500px]"
           style={{
             position: "absolute",
-            top: "400px", // Relative to viewport height (adjust as needed)
-            left: "8vw", // Relative to viewport width (adjust as needed)
+            left: "50%",
+            transform: "translateX(-50%)",
             color: "white",
-            backgroundColor: "rgba(0, 0, 0, 0)",
+            backgroundColor: "rgba(0, 0, 0, 0)"
           }}
         >
-          <p>
-            Professional Co-ed Engineering Fraternity<br></br>
-            Delta Gamma Chapter at Arizona State University
-          </p>
+
         </div>
       </div>
     </main>
