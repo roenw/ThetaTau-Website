@@ -113,6 +113,42 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Our Values Section */}
+      <div className="text-center bg-[#fdfcdc] rounded py-10">
+        <h1 className={`${bungee.className} text-tt-dark-red`}>
+          Our Values
+        </h1>
+        {/* Brotherhood */}
+        <div
+          className="bg-black ml-auto mr-auto"
+          style={{
+            width: "80%",
+            borderRadius: "10px"
+          }}
+        >
+          <div className="m-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <div className="mt-6 lg:my-10 lg:col-span-5 force-align-center">
+              <Image
+                alt=""
+                src="/Homepage-Brotherhood.png"
+                width="449"
+                height="334"
+              />
+            </div>
+            <div className="mb-6 lg:my-10 lg:col-span-7">
+              <h2 className={`${bungee.className} text-[40px] lg:text-[50px] text-tt-dark-red text-center`}>
+                Brotherhood
+              </h2>
+              <p className="text-white text-center mb-10">
+                Theta Tau fosters a strong sense of brotherhood by uniting members through shared values, collaborative efforts, and lifelong friendships, creating a supportive and empowering community for aspiring engineers.
+              </p>
+              <a href="/brothers" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5">
+                Meet The Brothers
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
