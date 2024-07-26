@@ -118,6 +118,38 @@ export default function Home() {
         <h1 className={`${bungee.className} text-tt-dark-red`}>
           Our Values
         </h1>
+
+        {/* Professionalism */}
+        <div
+          className="bg-black ml-auto mr-auto"
+          style={{
+            width: "80%",
+            borderRadius: "10px"
+          }}
+        >
+          <div className="m-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <div className="mb-6 lg:my-10 lg:col-span-7">
+              <h2 className={`${bungee.className} text-[40px] lg:text-[50px] text-tt-dark-red text-center`}>
+                Professionalism
+              </h2>
+              <p className="text-white text-center mb-10">
+                Theta Tau cultivates and enhances engineers' communication, problem-solving, and leadership skills, empowering them to excel professionally, contribute to their communities, and lead impactful careers and lives.
+              </p>
+              <a href="/pillars#professionalism" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5">
+                Learn More
+              </a>
+            </div>
+            <div className="mt-6 lg:my-10 lg:col-span-5 force-align-center">
+              <Image
+                alt=""
+                src="/Homepage-Professional.png"
+                width="449"
+                height="334"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Brotherhood */}
         <div
           className="bg-black ml-auto mr-auto"
@@ -142,9 +174,40 @@ export default function Home() {
               <p className="text-white text-center mb-10">
                 Theta Tau fosters a strong sense of brotherhood by uniting members through shared values, collaborative efforts, and lifelong friendships, creating a supportive and empowering community for aspiring engineers.
               </p>
-              <a href="/brothers" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5">
-                Meet The Brothers
+              <a href="/pillars#brotherhood" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5"> {/* Eventually change this to "meet the brothers" */}
+                Learn More
               </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Service */}
+        <div
+          className="bg-black ml-auto mr-auto"
+          style={{
+            width: "80%",
+            borderRadius: "10px"
+          }}
+        >
+          <div className="m-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <div className="mb-6 lg:my-10 lg:col-span-7">
+              <h2 className={`${bungee.className} text-[40px] lg:text-[50px] text-tt-dark-red text-center`}>
+                Service
+              </h2>
+              <p className="text-white text-center mb-10">
+                Theta Tau members exemplify a strong sense of service by consistently dedicating their time and skills to community outreach and philanthropic initiatives, striving to create lasting and meaningful positive change in the world around them.
+              </p>
+              <a href="/pillars#service" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5">
+                Learn More
+              </a>
+            </div>
+            <div className="mt-6 lg:my-10 lg:col-span-5 force-align-center">
+              <Image
+                alt=""
+                src="/Homepage-Service.png"
+                width="449"
+                height="334"
+              />
             </div>
           </div>
         </div>

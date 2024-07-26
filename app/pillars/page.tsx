@@ -76,13 +76,13 @@ export default function Pillars() {
         <div className="flex flex-row w-[100%] h-[70vh] bg-[#7a0104] pt-10 pb-10 gap-5">
           <div className="w-[60%] h-[100%] relative shadow-2xl">
             <Image
-              src="/ProfessionalPic.jpg"
+              src="/Professional-ChiLine.jpg"
               alt="professional-pic"
               layout="fill"
               className="object-cover"
             />
           </div>
-          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-l-4 border-[#e8b119]">
+          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-l-4 border-[#e8b119]" id="professionalism">
             <h1 className="text-[#e8b119] md:text-3xl lg:text-5xl font-bold pl-10">
               Professionalism
             </h1>
@@ -97,7 +97,7 @@ export default function Pillars() {
         </div>
 
         <div className="flex flex-row w-[100%] h-[70vh] bg-[#e8b119] pt-10 pb-10 gap-5">
-          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-r-4 border-[#7a0104]">
+          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-r-4 border-[#7a0104]" id="brotherhood">
             <h1 className="text-[#7a0104] md:text-3xl lg:text-5xl font-bold pl-10">
               Brotherhood
             </h1>
@@ -113,7 +113,7 @@ export default function Pillars() {
           </div>
           <div className="w-[60%] h-[100%] relative shadow-2xl">
             <Image
-              src="/Brotherhood.jpg"
+              src="/Brotherhood-Cookout.jpg"
               alt="brotherhood-pic"
               layout="fill"
               className="object-cover"
@@ -124,13 +124,13 @@ export default function Pillars() {
         <div className="flex flex-row w-[100%] h-[70vh] bg-[#7a0104] pt-10 pb-10 gap-5">
           <div className="w-[60%] h-[100%] relative shadow-2xl">
             <Image
-              src="/HomePagePicture.jpg"
+              src="/Service-BikeSaviors.jpg"
               alt="service-pic"
               layout="fill"
               className="object-cover"
             />
           </div>
-          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-l-4 border-[#e8b119]">
+          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-l-4 border-[#e8b119]" id="service">
             <h1 className="text-[#e8b119] md:text-3xl lg:text-5xl font-bold pl-10">
               Service
             </h1>
