@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Bungee } from "next/font/google";
 
+import { FaUsers, FaGraduationCap, FaBuilding } from "react-icons/fa"
+
 const bungee = Bungee({
   subsets: ["latin"],
   display: "swap",
@@ -208,6 +210,43 @@ export default function Home() {
                 width="449"
                 height="334"
               />
+            </div>
+          </div>
+        </div>
+
+        <hr
+          className="hidden mr-auto ml-auto lg:block"
+          style={{
+            width: "50%",
+            height: "6px",
+            backgroundColor: "#ad2730"
+          }} 
+        />
+
+
+        <div
+          className="bg-black mr-auto ml-auto my-5"
+          style={{
+            width: "60%",
+            color: "white",
+            borderRadius: "10px"
+          }}
+        >
+          <div className="m-10 grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="mb-6 lg:my-10 lg:col-span-1">
+              <FaUsers className="ml-auto mr-auto" color={"#e2ab16ff"} size={80} />
+              <h2 className={`${bungee.className} text-center`}>50+</h2>
+              <h3 className="text-center">ACTIVES</h3>
+            </div>
+            <div className="ml-auto mr-auto mb-6 lg:my-10 lg:col-span-1">
+              <FaGraduationCap className="ml-auto mr-auto" color={"#e2ab16ff"} size={80} />
+              <h2 className={`${bungee.className} text-center`}>200+</h2>
+              <h3 className="text-center">ALUMNI</h3>
+            </div>
+            <div className="ml-auto mr-auto mb-6 lg:my-10 lg:col-span-1">
+              <FaBuilding className="ml-auto mr-auto" color={"#e2ab16ff"} size={75} />
+              <h2 className={`${bungee.className} text-center`}>90+</h2>
+              <h3 className="text-center">CHAPTERS</h3>
             </div>
           </div>
         </div>
