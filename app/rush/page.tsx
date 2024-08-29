@@ -78,7 +78,7 @@ export default function Rush() {
         {/* FAQ Section */}
         <div className="w-screen bg-[#FFFFFF]">
           <h1 className="text-[#7a0104] text-[30px] lg:text-3xl font-bold mt-10 pl-10 gap-5">
-            FAQ's
+            FAQs
           </h1>
 
           {/* Dropdown 1 */}
