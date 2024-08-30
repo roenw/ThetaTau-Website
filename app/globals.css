@@ -102,3 +102,13 @@ p {
   text-transform: capitalize;
   text-decoration: none;
 }
+
+.aln-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aln-left {
+  margin-left: 0px;
+  margin-right: 0px;
+}

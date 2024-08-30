@@ -97,12 +97,14 @@ export default function Home() {
             <p className="text-white pb-8">
               Theta Tau is a co-ed professional engineering fraternity here at Arizona State University. We are a close knit brotherhood that encourages our members to excel professionally and give back to the surrounding community.
             </p>
-              <a href="/rush" className="tt-button-primary hover:bg-tt-dark-red hover:text-tt-gold mr-5">
-                Rush Theta Tau
-              </a>
-              <a href="/about" className="tt-button-secondary hover:bg-tt-gold hover:text-black">
-                Learn More
-              </a>
+              <div className="grid grid-cols-1 gap-4">
+                <a href="/rush" className="tt-button-primary hover:bg-tt-dark-red hover:text-tt-gold text-center">
+                  Rush Theta Tau
+                </a>
+                <a href="/about" className="tt-button-secondary hover:bg-tt-gold hover:text-black text-center">
+                  Learn More
+                </a>
+              </div>
           </div>
           <div>
             <Image
@@ -131,10 +133,10 @@ export default function Home() {
         >
           <div className="m-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
             <div className="mb-6 lg:my-10 lg:col-span-7">
-              <h2 className={`${bungee.className} text-[40px] lg:text-[50px] text-tt-dark-red text-center`}>
+              <h2 className={`${bungee.className} text-[6vw] md:text-[40px] text-tt-dark-red text-center my-5`}>
                 Professionalism
               </h2>
-              <p className="text-white text-center mb-10">
+              <p className="text-[15px] lg:text-[20px] text-white text-center mb-10">
                 Theta Tau cultivates and enhances engineers' communication, problem-solving, and leadership skills, empowering them to excel professionally, contribute to their communities, and lead impactful careers and lives.
               </p>
               <a href="/pillars#professionalism" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5">
@@ -147,6 +149,7 @@ export default function Home() {
                 src="/Homepage-Professional.png"
                 width="449"
                 height="334"
+                className="mb-5"
               />
             </div>
           </div>
@@ -170,7 +173,7 @@ export default function Home() {
               />
             </div>
             <div className="mb-6 lg:my-10 lg:col-span-7">
-              <h2 className={`${bungee.className} text-[40px] lg:text-[50px] text-tt-dark-red text-center`}>
+              <h2 className={`${bungee.className} text-[6vw] md:text-[40px] text-tt-dark-red text-center my-5`}>
                 Brotherhood
               </h2>
               <p className="text-white text-center mb-10">
@@ -193,7 +196,7 @@ export default function Home() {
         >
           <div className="m-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
             <div className="mb-6 lg:my-10 lg:col-span-7">
-              <h2 className={`${bungee.className} text-[40px] lg:text-[50px] text-tt-dark-red text-center`}>
+              <h2 className={`${bungee.className} text-[6vw] md:text-[40px] text-tt-dark-red text-center my-5`}>
                 Service
               </h2>
               <p className="text-white text-center mb-10">
@@ -209,6 +212,7 @@ export default function Home() {
                 src="/Homepage-Service.png"
                 width="449"
                 height="334"
+                className="mb-5"
               />
             </div>
           </div>
