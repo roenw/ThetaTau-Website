@@ -64,7 +64,7 @@ export default function Pillars() {
   return (
     <>
       <div className="relative w-screen h-[100vh] bg-pillars-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
-        <div className="text-white flex flex-col lg:items-center justify-end gap-3 w-[100%] h-[100%] py-[12vw] lg:py-[2vw] font-sans backdrop-brightness-75">
+        <div className="text-white flex flex-col items-center justify-end gap-3 w-[100%] h-[100%] py-[12vw] lg:py-[2vw] font-sans backdrop-brightness-75">
           <h1 className="text-white text-9xl font-bold">Pillars</h1>
           <p className="text-white text-3xl font-extralight">
             Theta Tau's Core Values
