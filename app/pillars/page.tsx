@@ -64,17 +64,17 @@ export default function Pillars() {
   return (
     <>
       <div className="relative w-screen h-[100vh] bg-pillars-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
-        <div className="text-white flex flex-col items-start justify-end gap-5 w-[100%] h-[100%] p-20 font-sans backdrop-brightness-75">
+        <div className="text-white flex flex-col lg:items-center justify-end gap-3 w-[100%] h-[100%] py-[12vw] lg:py-[2vw] font-sans backdrop-brightness-75">
           <h1 className="text-white text-9xl font-bold">Pillars</h1>
           <p className="text-white text-3xl font-extralight">
-            Core Principles of Theta Tau
+            Theta Tau's Core Values
           </p>
         </div>
       </div>
 
       <div className="w-screen">
-        <div className="flex flex-row w-[100%] h-[70vh] bg-[#7a0104] pt-10 pb-10 gap-5">
-          <div className="w-[60%] h-[100%] relative shadow-2xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] h-[85vh] lg:h-[70vh] bg-[#7a0104] py-5 gap-5">
+          <div className="h-[100%] min-h-[60vw] lg:min-h-0 relative shadow-2xl">
             <Image
               src="/Professional-ChiLine.jpg"
               alt="professional-pic"
@@ -82,11 +82,11 @@ export default function Pillars() {
               className="object-cover"
             />
           </div>
-          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-l-4 border-[#e8b119]" id="professionalism">
-            <h1 className="text-[#e8b119] md:text-3xl lg:text-5xl font-bold pl-10">
+          <div className="h-[100%] flex flex-col items-start justify-center font-sans lg:border-l-4 border-[#e8b119]" id="professionalism">
+            <h1 className="text-[#e8b119] text-4xl font-bold pl-10">
               Professionalism
             </h1>
-            <p className="text-[#EEEEEE] text-justify md:text-[18px] lg:text-xl p-10">
+            <p className="text-[#EEEEEE] text-justify text-md p-10">
               In Theta Tau we are dedicated to growing our members both in and
               outside the classroom, and jump starting our members’ careers. We
               seek to develop our members into leaders in engineering and our
@@ -96,12 +96,12 @@ export default function Pillars() {
           </div>
         </div>
 
-        <div className="flex flex-row w-[100%] h-[70vh] bg-[#e8b119] pt-10 pb-10 gap-5">
-          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-r-4 border-[#7a0104]" id="brotherhood">
-            <h1 className="text-[#7a0104] md:text-3xl lg:text-5xl font-bold pl-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] h-[91vh] bg-[#e8b119] py-10 gap-5">
+          <div className="h-[100%] flex flex-col items-start justify-center font-sans lg:border-r-4 border-[#7a0104]" id="brotherhood">
+            <h1 className="text-[#7a0104] text-4xl font-bold pl-10">
               Brotherhood
             </h1>
-            <p className="text-[#171717] text-justify md:text-[18px] lg:text-xl p-10">
+            <p className="text-[#171717] text-justify text-md p-10">
               Joining Theta Tau is like joining a family of over 40,000 honest,
               talented, and dependable men and women who all have an engineering
               mindset. You will form bonds and friendships which will last your
@@ -111,7 +111,7 @@ export default function Pillars() {
               be there, because your brothers in Theta Tau are your family.
             </p>
           </div>
-          <div className="w-[60%] h-[100%] relative shadow-2xl">
+          <div className="h-[100%] min-h-[60vw] lg:min-h-0 relative shadow-2xl">
             <Image
               src="/Brotherhood-Cookout.jpg"
               alt="brotherhood-pic"
@@ -121,8 +121,8 @@ export default function Pillars() {
           </div>
         </div>
 
-        <div className="flex flex-row w-[100%] h-[70vh] bg-[#7a0104] pt-10 pb-10 gap-5">
-          <div className="w-[60%] h-[100%] relative shadow-2xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] h-[85vh] bg-[#7a0104] py-10 gap-5">
+          <div className="h-[100%] min-h-[60vw] lg:min-h-0 relative shadow-2xl">
             <Image
               src="/Service-BikeSaviors.jpg"
               alt="service-pic"
@@ -130,11 +130,11 @@ export default function Pillars() {
               className="object-cover"
             />
           </div>
-          <div className="w-[40%] h-[100%] flex flex-col items-start justify-center font-sans border-l-4 border-[#e8b119]" id="service">
-            <h1 className="text-[#e8b119] md:text-3xl lg:text-5xl font-bold pl-10">
+          <div className="h-[100%] flex flex-col items-start justify-center font-sans lg:border-l-4 border-[#e8b119]" id="service">
+            <h1 className="text-[#e8b119] text-4xl font-bold pl-10">
               Service
             </h1>
-            <p className="text-[#EEEEEE] text-justify md:text-[18px] lg:text-xl p-10">
+            <p className="text-[#EEEEEE] text-justify text-md p-10">
               Our members love giving back to the community. Every year there
               are national efforts where brothers from across the nation unite
               to help our communities. These efforts include activities like
