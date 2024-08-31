@@ -73,7 +73,7 @@ export default function Rush() {
             <div className="force-align-center">
               <div>
                 <div className="border-8 border-[#7a0104] m-[40px]">
-                  <Image alt="" src="/Rush.jpg" width="400" height="500" />
+                  <Image alt="" src="/RushPoster.png" width="400" height="500" />
                 </div>
               </div>
             </div>
@@ -184,7 +184,7 @@ export default function Rush() {
                 You must meet the following requirements at the time of initiation
                 <br />
                 <br />
-                -In an engineering major at Arizona State University
+                -Be within an ABET accredited major at Arizona State University 
                 <br />
                 -Have at least 6 months before graduation
                 <br />
