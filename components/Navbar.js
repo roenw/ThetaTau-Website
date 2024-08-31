@@ -33,9 +33,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 backdrop-blur-xl text-white bg-black/50 fixed z-100">
+    <div className="flex justify-between items-center w-full h-20 px-4 backdrop-blur-2xl text-white bg-black/50 fixed z-100">
       <div>
-        {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <div className="font-signature ml-2 lg:ml-20">
           <a
             className="link-underline link-underline-black inline"
@@ -84,7 +83,7 @@ const Navbar = () => {
       {nav && (
         <ul
           style={{ zIndex: 5 }}
-          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen backdrop-blur-lg bg-black/30 to-gray-800 text-white"
+          className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen backdrop-blur-2xl bg-black/70 to-gray-800 text-white"
         >
           {links.map(({ id, linkname, target }) => (
             <li
