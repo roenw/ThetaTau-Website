@@ -2,16 +2,20 @@ import Link from "next/link";
 export default function Socials() {
   return (
     <>
-      <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <hr className="my-6 border-neutral-800 sm:mx-auto lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-        <span className="text-sm text-gray-500 sm:text-center">
+        <span className="text-sm text-neutral-500 sm:text-center">
           © 2024{" "}
           <Link href="/" className="hover:underline">
             Theta Tau - Delta Gamma Chapter
           </Link>
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <a href="https://www.instagram.com/thetataudg/" target="_blank" className="text-gray-500 hover:text-gray-900">
+          <a
+            href="https://www.instagram.com/thetataudg/"
+            target="_blank"
+            className="text-neutral-500 hover:text-neutral-900"
+          >
             <svg
               className="w-5 h-5"
               fill="currentColor"
@@ -25,7 +29,10 @@ export default function Socials() {
               />
             </svg>
           </a>
-          <a href="mailto:general@thetatau-dg.org" className="text-gray-500 hover:text-gray-900"> 
+          <a
+            href="mailto:general@thetatau-dg.org"
+            className="text-neutral-500 hover:text-neutral-900"
+          >
             <svg
               className="w-5 h-5"
               stroke="currentColor"
@@ -34,13 +41,18 @@ export default function Socials() {
               aria-hidden="true"
               fill="none"
             >
-              <path stroke-linecap="round" 
-                stroke-linejoin="round" 
-                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" 
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
               />
             </svg>
           </a>
-          <a href="https://github.com/roenw/ThetaTau-Website" target="_blank" className="text-gray-500 hover:text-gray-900">
+          <a
+            href="https://github.com/roenw/ThetaTau-Website"
+            target="_blank"
+            className="text-neutral-500 hover:text-neutral-900"
+          >
             <svg
               className="w-5 h-5"
               fill="currentColor"
