@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -84,8 +90,8 @@ p {
 }
 
 .tt-button-secondary {
-  color: #E2AB16;
-  outline: 2px solid #E2AB16;
+  color: #e2ab16;
+  outline: 2px solid #e2ab16;
   font-size: 20px;
   font-style: normal;
   transition: ease-in 0.3s;

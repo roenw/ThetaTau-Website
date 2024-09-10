@@ -13,9 +13,9 @@ export default function Rush() {
 
   return (
     <>
-    <div className="relative w-screen h-[400px] bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l">
+      <div className="relative w-screen h-[400px] bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l">
         <div className="text-white flex flex-col items-start justify-end gap-5 w-[100%] h-[100%] pb-20 font-sans">
-        <h1 className="text-[#7a0104] lg:text-[6vw] mt-[5%] ml-[5%] font-bold">
+          <h1 className="text-[#7a0104] lg:text-[6vw] mt-[5%] ml-[5%] font-bold">
             Recruitment
           </h1>
           <a
@@ -28,7 +28,6 @@ export default function Rush() {
         </div>
       </div>
       <div className="flex flex-col">
-
         {/* Why Join Section */}
         <div className="w-screen bg-[#ffffff]">
           <h1 className="text-[#7a0104] text-[30px] lg:text-3xl font-bold mt-10 pl-10">
@@ -73,7 +72,12 @@ export default function Rush() {
             <div className="force-align-center">
               <div>
                 <div className="border-8 border-[#7a0104] m-[40px]">
-                  <Image alt="" src="/RushPoster.png" width="400" height="500" />
+                  <Image
+                    alt=""
+                    src="/RushPoster.png"
+                    width="400"
+                    height="500"
+                  />
                 </div>
               </div>
             </div>
@@ -94,8 +98,9 @@ export default function Rush() {
             >
               What is Rush?
               <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${faq1Open ? "rotate-180" : ""
-                  }`}
+                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
+                  faq1Open ? "rotate-180" : ""
+                }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -112,9 +117,10 @@ export default function Rush() {
             </button>
             {faq1Open && (
               <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                Rush is a two-week period full of fun events to help you get to know Theta Tau.
-                We host info sessions, game nights, and much more! Attending rush events is the
-                first step in becoming a member of Theta Tau. All events are FREE, and often have free
+                Rush is a two-week period full of fun events to help you get to
+                know Theta Tau. We host info sessions, game nights, and much
+                more! Attending rush events is the first step in becoming a
+                member of Theta Tau. All events are FREE, and often have free
                 food. So stop by and have some fun!
               </div>
             )}
@@ -128,8 +134,9 @@ export default function Rush() {
             >
               What is Pledging?
               <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${faq2Open ? "rotate-180" : ""
-                  }`}
+                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
+                  faq2Open ? "rotate-180" : ""
+                }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -146,11 +153,15 @@ export default function Rush() {
             </button>
             {faq2Open && (
               <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                Pledging is your chance to determine if Theta Tau is the right fit for you, and prepares you for becoming
-                a member.  Pledging is the next step after rush, and is a semester long process. You will get to meet all
-                its members, learn about the history of the chapter and the fraternity, participate in professional and
-                service events, and form bonds which will last the rest of your life. You will help pick your ‘big brother’
-                who is an active member that will guide you through the pledging process, and for many years to come.
+                Pledging is your chance to determine if Theta Tau is the right
+                fit for you, and prepares you for becoming a member. Pledging is
+                the next step after rush, and is a semester long process. You
+                will get to meet all its members, learn about the history of the
+                chapter and the fraternity, participate in professional and
+                service events, and form bonds which will last the rest of your
+                life. You will help pick your ‘big brother’ who is an active
+                member that will guide you through the pledging process, and for
+                many years to come.
               </div>
             )}
           </div>
@@ -163,8 +174,9 @@ export default function Rush() {
             >
               Am I eligible to join?
               <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${faq3Open ? "rotate-180" : ""
-                  }`}
+                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
+                  faq3Open ? "rotate-180" : ""
+                }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -181,10 +193,11 @@ export default function Rush() {
             </button>
             {faq3Open && (
               <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                You must meet the following requirements at the time of initiation
+                You must meet the following requirements at the time of
+                initiation
                 <br />
                 <br />
-                -Be within an ABET accredited major at Arizona State University 
+                -Be within an ABET accredited major at Arizona State University
                 <br />
                 -Have at least 6 months before graduation
                 <br />
@@ -192,7 +205,8 @@ export default function Rush() {
                 <br />
                 -Not be a member of a competing Fraternity or Sorority
                 <br />
-                -At least 18 years old<br />
+                -At least 18 years old
+                <br />
               </div>
             )}
           </div>
@@ -205,8 +219,9 @@ export default function Rush() {
             >
               What if I change my major from engineering?
               <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${faq4Open ? "rotate-180" : ""
-                  }`}
+                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
+                  faq4Open ? "rotate-180" : ""
+                }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -223,9 +238,10 @@ export default function Rush() {
             </button>
             {faq4Open && (
               <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                As long as you are enrolled in engineering at the time of initiation, you will be a member of
-                Theta Tau for life. While we focus on engineering, and most of our members complete degrees in
-                engineering, we do have members change majors.
+                As long as you are enrolled in engineering at the time of
+                initiation, you will be a member of Theta Tau for life. While we
+                focus on engineering, and most of our members complete degrees
+                in engineering, we do have members change majors.
               </div>
             )}
           </div>
@@ -238,8 +254,9 @@ export default function Rush() {
             >
               How is Theta Tau different than an honors society?
               <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${faq5Open ? "rotate-180" : ""
-                  }`}
+                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
+                  faq5Open ? "rotate-180" : ""
+                }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -256,11 +273,14 @@ export default function Rush() {
             </button>
             {faq5Open && (
               <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                Honor societies are great for being around people that share an academic interest with you.
-                These are excellent groups for furthering your interests in a topic, but the benefits often
-                stop there. Because Theta Tau is a brotherhood, you will join a group of people that take friendships
-                beyond the classroom and even the campus, and treat you like part of a family. When you join Theta
-                Tau you will make friendships that will last the rest of your life, anywhere you go.
+                Honor societies are great for being around people that share an
+                academic interest with you. These are excellent groups for
+                furthering your interests in a topic, but the benefits often
+                stop there. Because Theta Tau is a brotherhood, you will join a
+                group of people that take friendships beyond the classroom and
+                even the campus, and treat you like part of a family. When you
+                join Theta Tau you will make friendships that will last the rest
+                of your life, anywhere you go.
               </div>
             )}
           </div>
@@ -273,8 +293,9 @@ export default function Rush() {
             >
               How do you pronounce “Theta Tau”?
               <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${faq6Open ? "rotate-180" : ""
-                  }`}
+                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
+                  faq6Open ? "rotate-180" : ""
+                }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -291,15 +312,15 @@ export default function Rush() {
             </button>
             {faq6Open && (
               <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                THAY-Ta TAH. Notice the pronunciation of "Tau" differs from the typical pronunciation you might hear
-                in a Math class. This is not by mistake, but rather a Greek Grammatical rule.
+                THAY-Ta TAH. Notice the pronunciation of "Tau" differs from the
+                typical pronunciation you might hear in a Math class. This is
+                not by mistake, but rather a Greek Grammatical rule.
               </div>
             )}
           </div>
         </div>
 
-        <div className='mt-5'></div>
-
+        <div className="mt-5"></div>
       </div>
     </>
   );
