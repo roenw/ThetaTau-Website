@@ -31,7 +31,7 @@ const Footer = () => {
               </h3>
             </div>
           </div>
-          <div>
+          <div className="mb-5">
             <h2 className="mb-6 text-sm font-semibold text-neutral-100 uppercase">
               Contacts
             </h2>
@@ -55,17 +55,20 @@ const Footer = () => {
             </h2>
             <ul className="space-y-4 text-neutral-400">
               <li>
-                <Link href="/brotherhood" className="hover:underline ">
+                <Link href="/pillars#brotherhood" className="hover:underline ">
                   Brotherhood
                 </Link>
               </li>
               <li>
-                <Link href="/professionalism" className="hover:underline">
+                <Link
+                  href="/pillars#professionalism"
+                  className="hover:underline"
+                >
                   Professionalism
                 </Link>
               </li>
               <li>
-                <Link href="/service" className="hover:underline">
+                <Link href="/pillars#service" className="hover:underline">
                   Service
                 </Link>
               </li>

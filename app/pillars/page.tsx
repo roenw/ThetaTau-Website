@@ -1,7 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Professional_ChiLine from "./../../public/Professional-ChiLine.jpg";
+import Service_BikeSaviors from "./../../public/Service-BikeSaviors.jpg";
+import Brotherhood_Cookout from "./../../public/Brotherhood-Cookout.jpg";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import Carousel from "react-bootstrap/Carousel";
 
 export default function Pillars() {
   useEffect(() => {
@@ -39,7 +43,7 @@ export default function Pillars() {
     },
     {
       slide: "/carousel/ParkCleanup.jpg",
-      info: "Local Park Cleanup", 
+      info: "Local Park Cleanup",
     },
     {
       slide: "/carousel/Banquet.jpg",
@@ -79,30 +83,27 @@ export default function Pillars() {
 
   return (
     <>
-      <div className="relative w-screen h-[100vh] lg:bg-pillars-parallax bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
-        <div className="text-white flex flex-col items-center justify-end gap-3 w-[100%] h-[100%] py-[12vw] lg:py-[2vw] font-sans backdrop-brightness-75">
-          <h1 className="text-white text-9xl font-bold">Pillars</h1>
-          <p className="text-white text-3xl font-extralight">
+      <div className="w-[100%] h-[600px] lg:bg-pillars-parallax bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
+        <div className=" flex flex-col items-start justify-end gap-3 w-[100%] h-[100%] lg:px-[50px] px-[30px] py-[12vw] lg:py-[2vw] font-sans lg:backdrop-brightness-75">
+          <h1 className="lg:text-tt-gold lg:text-9xl md:text-7xl sm:text-6xl font-bold text-[#7a0104]">
+            Pillars
+          </h1>
+          <p className="lg:text-white lg:text-3xl text-2xl  font-extralight text-black">
             Theta Tau's Core Values
           </p>
         </div>
       </div>
 
-      <div className="w-screen">
-        <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] h-[88vh] lg:h-[70vh] bg-[#7a0104] py-5 gap-5">
-          <div className="h-[100%] min-h-[60vw] lg:min-h-0 relative shadow-2xl">
-            <Image
-              src="/Professional-ChiLine.jpg"
-              alt="professional-pic"
-              layout="fill"
-              className="object-cover"
-            />
-          </div>
-          <div className="h-[100%] flex flex-col items-start justify-center font-sans lg:border-l-4 border-[#e8b119]" id="professionalism">
-            <h1 className="text-[#e8b119] text-4xl font-bold pl-10">
+      <div className="w-[100%]">
+        <div
+          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-20 md:p-10 sm:p-5 flex-col"
+          id="professionalism"
+        >
+          <div className="lg:w-[30%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
+            <h1 className="text-[30px] font-extrabold text-[#7a0104]">
               Professionalism
             </h1>
-            <p className="text-[#EEEEEE] text-justify text-md p-10">
+            <p className="text-[13px] xl:text-[20px] font-light">
               In Theta Tau we are dedicated to growing our members both in and
               outside the classroom, and jump starting our members’ careers. We
               seek to develop our members into leaders in engineering and our
@@ -110,14 +111,31 @@ export default function Pillars() {
               will last a lifetime.
             </p>
           </div>
+          <div className="lg:w-[70%] w-[100%] p-5 lg:p-0">
+            <Image
+              src={Professional_ChiLine}
+              alt="Chiline"
+              className=" w-[100%]"
+            />
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] h-[91vh] bg-[#e8b119] py-10 gap-5">
-          <div className="h-[100%] flex flex-col items-start justify-center font-sans lg:border-r-4 border-[#7a0104]" id="brotherhood">
-            <h1 className="text-[#7a0104] text-4xl font-bold pl-10">
+        <div
+          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-20 md:p-10 sm:p-5 flex-col-reverse bg-[#e0e0e0]"
+          id="brotherhood"
+        >
+          <div className="lg:w-[70%] w-[100%] p-5 lg:p-0">
+            <Image
+              src={Brotherhood_Cookout}
+              alt="Service"
+              className=" w-[100%]"
+            />
+          </div>
+          <div className="lg:w-[30%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
+            <h1 className="text-[30px] font-extrabold text-[#7a0104]">
               Brotherhood
             </h1>
-            <p className="text-[#171717] text-justify text-md p-10">
+            <p className="text-[13px] xl:text-[20px] font-light">
               Joining Theta Tau is like joining a family of over 40,000 honest,
               talented, and dependable men and women who all have an engineering
               mindset. You will form bonds and friendships which will last your
@@ -127,30 +145,17 @@ export default function Pillars() {
               be there, because your brothers in Theta Tau are your family.
             </p>
           </div>
-          <div className="h-[100%] min-h-[60vw] lg:min-h-0 relative shadow-2xl">
-            <Image
-              src="/Brotherhood-Cookout.jpg"
-              alt="brotherhood-pic"
-              layout="fill"
-              className="object-cover"
-            />
-          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] h-[88vh] bg-[#7a0104] py-10 gap-5">
-          <div className="h-[100%] min-h-[60vw] lg:min-h-0 relative shadow-2xl">
-            <Image
-              src="/Service-BikeSaviors.jpg"
-              alt="service-pic"
-              layout="fill"
-              className="object-cover"
-            />
-          </div>
-          <div className="h-[100%] flex flex-col items-start justify-center font-sans lg:border-l-4 border-[#e8b119]" id="service">
-            <h1 className="text-[#e8b119] text-4xl font-bold pl-10">
+        <div
+          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-20 md:p-10 sm:p-5 flex-col"
+          id="service"
+        >
+          <div className="lg:w-[30%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
+            <h1 className="text-[30px] font-extrabold text-[#7a0104]">
               Service
             </h1>
-            <p className="text-[#EEEEEE] text-justify text-md p-10">
+            <p className="text-[13px] xl:text-[20px] font-light">
               Our members love giving back to the community. Every year there
               are national efforts where brothers from across the nation unite
               to help our communities. These efforts include activities like
@@ -158,21 +163,27 @@ export default function Pillars() {
               drives.
             </p>
           </div>
+          <div className="lg:w-[70%] w-[100%] p-5 lg:p-0">
+            <Image
+              src={Service_BikeSaviors}
+              alt="Service"
+              className=" w-[100%]"
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="grid grid-cols-1">
-        <div className="flex flex-col w-screen lg:px-20 lg:py-10 bg-[#e8b119] gap-10">
-          <div className="flex flex-col w-[100%] h-[30vh] lg:h-[20vh] px-5 lg:px-0 gap-5">
-            <h1 className="text-[#7a0104] text-8xl pt-5 lg:pt-0 font-normal">Gallery</h1>
-            <p className="text-[#171717] text-xl pl-2 italic">
+        <div className="w-[100%] flex flex-col lg:gap-10 lg:p-20 md:p-10 sm:p-5 bg-[#e0e0e0]">
+          <div className=" flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
+            <h1 className="text-[30px] font-extrabold text-[#7a0104]">
+              Gallery
+            </h1>
+            <p className="text-[13px] xl:text-[20px] font-light">
               Discover the vibrant life of Theta Tau through our gallery. From
-              professional events and service projects to brotherhood gatherings,
-              see the moments that define our fraternity.
+              professional events and service projects to brotherhood
+              gatherings, see the moments that define our fraternity.
             </p>
           </div>
-
-          <div className="w-[100%] h-[70vh] relative flex justify-center items-center group pt-5 lg:pt-0">
+          <div className=" h-[70vh] relative flex justify-center items-center group pt-5 lg:pt-0">
             <div
               style={{
                 backgroundImage: `url(${gallerySlides[currentIndex].slide})`,
