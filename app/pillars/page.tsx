@@ -27,7 +27,7 @@ export default function Pillars() {
     },
     {
       slide: "/carousel/FinalsStudyRoom.jpg",
-      info: "Study sessions for Finals",
+      info: "Study Sessions for Finals",
     },
     {
       slide: "/carousel/GameNight.jpg",
@@ -40,6 +40,26 @@ export default function Pillars() {
     {
       slide: "/carousel/ParkCleanup.jpg",
       info: "Local Park Cleanup", 
+    },
+    {
+      slide: "/carousel/Banquet.jpg",
+      info: "Banquet Night",
+    },
+    {
+      slide: "/carousel/ChapterPhoto.jpg",
+      info: "Delta Gamma Chapter",
+    },
+    {
+      slide: "/carousel/OpenDoor.jpg",
+      info: "ASU Open Door",
+    },
+    {
+      slide: "/carousel/PieABrother.jpg",
+      info: "Pie-A-Brother",
+    },
+    {
+      slide: "/carousel/TrickOrCanning.jpg",
+      info: "Trick Or Canning",
     },
   ];
 
@@ -59,7 +79,7 @@ export default function Pillars() {
 
   return (
     <>
-      <div className="relative w-screen h-[100vh] bg-pillars-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
+      <div className="relative w-screen h-[100vh] lg:bg-pillars-parallax bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
         <div className="text-white flex flex-col items-center justify-end gap-3 w-[100%] h-[100%] py-[12vw] lg:py-[2vw] font-sans backdrop-brightness-75">
           <h1 className="text-white text-9xl font-bold">Pillars</h1>
           <p className="text-white text-3xl font-extralight">
