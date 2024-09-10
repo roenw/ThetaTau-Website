@@ -39,11 +39,7 @@ export default function Pillars() {
     },
     {
       slide: "/carousel/ParkCleanup.jpg",
-      info: "Local Park Cleanup",
-    },
-    {
-      slide: "/carousel/Retreat.jpg",
-      info: "Camping during Retreat",
+      info: "Local Park Cleanup", 
     },
   ];
 
