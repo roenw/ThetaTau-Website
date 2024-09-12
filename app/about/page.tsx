@@ -20,14 +20,16 @@ export default function About() {
 
   return (
     <>
-      <div className="relative w-screen h-[100vh] bg-pillars-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
-        <div className="text-white flex flex-col items-center justify-end gap-3 w-[100%] h-[100%] py-[12vw] lg:py-[2vw] font-sans backdrop-brightness-75">
-          <h1 className="text-white text-9xl font-bold">About</h1>
-          <p className="text-white text-3xl font-extralight">
-            Learn more about the Delta Gamma Chapter
-          </p>
-        </div>
+      <div className="relative w-screen h-[400px] bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
+      text-white flex flex-col items-start justify-end h-[100%] pb-5 font-sans">
+        <h1 className={`text-[#7a0104] text-[95px] ml-[5%] font-bold`}>
+          About
+        </h1>
+        <h2 className="text-[#7a0104] text-[30px] ml-[5%]">
+          Learn more about Theta Tau
+        </h2>
       </div>
+      
       <div className="max-w-5xl mx-auto bg-[#ffffff]">
         <h1 className="text-[#7a0104] text-[30px] text-center lg:text-3xl font-bold mt-10 pl-10">
           Theta Tau Nationally

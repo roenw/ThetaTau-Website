@@ -14,8 +14,8 @@ export default function Rush() {
   return (
     <>
       <div className="relative w-screen h-[400px] bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l">
-        <div className="text-white flex flex-col items-start justify-end gap-5 w-[100%] h-[100%] pb-20 font-sans">
-          <h1 className="text-[#7a0104] lg:text-[6vw] mt-[5%] ml-[5%] font-bold">
+        <div className="text-white flex flex-col items-start justify-end gap-5 w-[100%] h-[100%] pb-5 font-sans">
+          <h1 className="text-[#7a0104] text-[75px] mt-[5%] ml-[5%] font-bold">
             Recruitment
           </h1>
           <a

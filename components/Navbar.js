@@ -22,13 +22,13 @@ const Navbar = () => {
     },
     {
       id: 3,
-      linkname: "Rush",
-      target: "/rush",
+      linkname: "Pillars",
+      target: "/pillars",
     },
     {
       id: 4,
-      linkname: "Pillars",
-      target: "/pillars",
+      linkname: "Rush",
+      target: "/rush",
     },
   ];
 
