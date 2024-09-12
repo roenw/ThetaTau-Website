@@ -109,6 +109,25 @@ p {
   text-decoration: none;
 }
 
+.tt-button-rush {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  transition: 0.3s;
+  font-family: var(--font-nunito-sans);
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 11px;
+  padding-left: 28px;
+  border-radius: 7.5px;
+  padding-right: 28px;
+  letter-spacing: 1px;
+  padding-bottom: 11px;
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: #000000;
+}
+
 .aln-center {
   margin-left: auto;
   margin-right: auto;

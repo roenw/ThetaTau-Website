@@ -17,7 +17,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "pillars-parallax": "url('./../public/Pillars.jpg')",
-        "rush-parallax": "url('./../public/RushBackground.png')",
+        "grey-parallax": "url('./../public/RushBackground.png')",
+        "red-parallax": "url('./../public/RedBackground.png')",
+        "yellow-parallax": "url('./../public/AboutBackground.png')",
       },
       zIndex: {
         "100": "100",

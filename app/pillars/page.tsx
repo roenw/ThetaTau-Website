@@ -81,17 +81,17 @@ export default function Pillars() {
     setCurrentIndex(newIndex);
   };
 
+
   return (
     <>
-      <div className="w-[100%] h-[600px] lg:bg-pillars-parallax bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
-        <div className=" flex flex-col items-start justify-end gap-3 w-[100%] h-[100%] lg:px-[50px] px-[30px] py-[12vw] lg:py-[2vw] font-sans lg:backdrop-brightness-75">
-          <h1 className="lg:text-tt-gold lg:text-9xl md:text-7xl sm:text-6xl font-bold text-[#7a0104]">
-            Pillars
-          </h1>
-          <p className="lg:text-white lg:text-3xl text-2xl  font-extralight text-black">
-            Theta Tau's Core Values
-          </p>
-        </div>
+      <div className="relative w-screen h-[400px] bg-red-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
+      text-white flex flex-col items-start justify-end h-[100%] pb-10 font-sans">
+        <h1 className={`text-white text-[95px] ml-[5%] font-bold`}>
+          Pillars
+        </h1>
+        <h2 className="text-white text-[30px] ml-[5%]">
+          Theta Tau's Core Values
+        </h2>
       </div>
 
       <div className="w-[100%]">
