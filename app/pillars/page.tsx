@@ -86,10 +86,10 @@ export default function Pillars() {
     <>
       <div className="relative w-screen h-[400px] bg-red-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
       text-white flex flex-col items-start justify-end h-[100%] pb-10 font-sans">
-        <h1 className={`text-white text-[95px] ml-[5%] font-bold`}>
+        <h1 className={`text-white text-[13vw] md:text-[95px] ml-[5%] font-bold`}>
           Pillars
         </h1>
-        <h2 className="text-white text-[30px] ml-[5%]">
+        <h2 className="text-white text-[4vw] md:text-[30px] ml-[5%]">
           Theta Tau's Core Values
         </h2>
       </div>
