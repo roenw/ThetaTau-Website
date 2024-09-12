@@ -15,13 +15,17 @@ export default function Rush() {
     <>
       <div className="relative w-screen h-[400px] bg-yellow-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l">
         <div className="text-white flex flex-col items-start justify-end gap-5 w-[100%] h-[100%] pb-10 font-sans">
-          <h1 className="text-black text-[14vw] md:text-[95px] ml-[5%] font-bold">
+          <h1 className="text-black text-[13vw] md:text-[95px] ml-[5%] font-bold">
             Recruitment
           </h1>
+          <h2 className="text-black text-[3vw] md:text-[24px] ml-[5%] font-bold">
+            Rush for the Fall 2024 semester is over. Please fill out this form if you are interested in rushing next
+            semester!
+          </h2>
           <a
-            href="https://forms.gle/yNUJKf1JwkvvrbEJ6"
-            target="_blank"
-            className="tt-button-rush hover:bg-white hover:text-black mr-5 ml-[5%]"
+              href="https://forms.gle/yNUJKf1JwkvvrbEJ6"
+              target="_blank"
+              className="tt-button-rush hover:bg-white hover:text-black mr-5 ml-[5%]"
           >
             Rush Interest Form
           </a>
@@ -48,7 +52,7 @@ export default function Rush() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div>
               <h1 className="text-[#7a0104] text-[30px] lg:text-3xl font-bold mt-10 pl-10">
-                Rush Events
+                Fall 2024 Rush Events
               </h1>
               <p className="text-[#171717] text-justify text-[15px] lg:text-xl p-10 border-l-4 border-[#7a0104] m-10">
                 Game Night - Wednesday August 28, 7:30PM - GWC487
