@@ -13,15 +13,15 @@ export default function Rush() {
 
   return (
     <>
-      <div className="relative w-screen h-[400px] bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l">
-        <div className="text-white flex flex-col items-start justify-end gap-5 w-[100%] h-[100%] pb-5 font-sans">
-          <h1 className="text-[#7a0104] text-[14vw] md:text-[95px] mt-[5%] ml-[5%] font-bold">
+      <div className="relative w-screen h-[400px] bg-yellow-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l">
+        <div className="text-white flex flex-col items-start justify-end gap-5 w-[100%] h-[100%] pb-10 font-sans">
+          <h1 className="text-black text-[14vw] md:text-[95px] ml-[5%] font-bold">
             Recruitment
           </h1>
           <a
             href="https://forms.gle/Lf12vntztHLCiGwa9"
             target="_blank"
-            className="tt-button-primary hover:bg-tt-dark-red hover:text-tt-gold mr-5 ml-[5%]"
+            className="tt-button-rush hover:bg-white hover:text-black mr-5 ml-[5%]"
           >
             Rush Interest Form
           </a>

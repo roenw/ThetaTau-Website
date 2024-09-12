@@ -20,12 +20,12 @@ export default function About() {
 
   return (
     <>
-      <div className="relative w-screen h-[400px] bg-rush-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
-      text-white flex flex-col items-start justify-end h-[100%] pb-5 font-sans">
-        <h1 className={`text-[#7a0104] text-[95px] ml-[5%] font-bold`}>
+      <div className="relative w-screen h-[400px] bg-grey-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
+      text-white flex flex-col items-start justify-end h-[100%] pb-10 font-sans">
+        <h1 className={`text-black text-[95px] ml-[5%] font-bold`}>
           About
         </h1>
-        <h2 className="text-[#7a0104] text-[30px] ml-[5%]">
+        <h2 className="text-black text-[30px] ml-[5%]">
           Learn more about Theta Tau
         </h2>
       </div>
