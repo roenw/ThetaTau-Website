@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function About() {
   useEffect(() => {
@@ -20,17 +21,47 @@ export default function About() {
 
   return (
     <>
-      <div className="relative w-screen h-[400px] bg-grey-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
-      text-white flex flex-col items-start justify-end h-[100%] pb-10 font-sans">
-        <h1 className={"text-black text-[13vw] md:text-[95px] ml-[5%] font-bold"}>
-          About
-        </h1>
-        <h2 className="text-black text-[4vw] md:text-[30px] ml-[5%]">
-          Learn more about Theta Tau
-        </h2>
+      <div className="relative w-screen h-[100vh] bg-pillars-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
+        <div className="text-white flex flex-col items-center justify-end gap-3 w-[100%] h-[100%] py-[12vw] lg:py-[2vw] font-sans backdrop-brightness-75">
+          <h1 className="text-white text-9xl font-bold">About</h1>
+          <p className="text-white text-3xl font-extralight">
+            Learn more about the Delta Gamma Chapter
+          </p>
+        </div>
       </div>
-      
-      <div className="max-w-5xl mx-auto bg-[#ffffff]">
+      <div className="w-[100%] bg-white flex flex-col px-5 py-10">
+        <div className="w-[100%] flex flex-row">
+          <div className="w-[40%] flex flex-col gap-3">
+          <h1 className="text-2xl font-bold text-[#7a0104]">Theta Tau Nationally</h1>
+          <p className="w-[100%] text-justify">Whether you want to build connections, develop professional skills, or
+          just come for the free pizza, there are plenty of reasons to rush
+          Theta Tau. For many engineering students here at ASU, Theta Tau is the
+          defining part of their college experience. As the oldest and largest
+          coed engineering fraternity in the nation, joining Theta Tau can open
+          up a whole world of possibilities to the aspiring engineer.</p>
+          </div>
+          <div className="w-[60%] flex flex-row justify-center gap-2">
+          <Image
+                    alt=""
+                    src="/PizzaPic.jpg"
+                    width="400"
+                    height="500"
+                  />
+                  <Image
+                    alt=""
+                    src="/houstonHotChicken.jpg"
+                    width="400"
+                    height="500"
+                  />
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      {/* <div className="max-w-5xl mx-auto bg-[#ffffff]">
         <h1 className="text-[#7a0104] text-[30px] text-center lg:text-3xl font-bold mt-10 pl-10">
           Theta Tau Nationally
         </h1>
@@ -93,7 +124,7 @@ export default function About() {
             400 total members.
           </p>
         </p>
-      </div>
+      </div> */}
     </>
   );
 }
