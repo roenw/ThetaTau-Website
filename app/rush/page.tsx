@@ -19,7 +19,7 @@ export default function Rush() {
             Recruitment
           </h1>
           <a
-            href="https://forms.gle/Lf12vntztHLCiGwa9"
+            href="https://forms.gle/yNUJKf1JwkvvrbEJ6"
             target="_blank"
             className="tt-button-rush hover:bg-white hover:text-black mr-5 ml-[5%]"
           >

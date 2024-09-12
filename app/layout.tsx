@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import Head from 'next/head';
+import Script from 'next/script';
+
 import "./globals.css";
 
 import Navbar from "../components/Navbar.js";
@@ -31,8 +34,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* External Google Tag Manager script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R1HDPDN1XG"
+          strategy="beforeInteractive"
+        />
+
+        {/* Inline Google Tag Manager setup */}
+        <Script id="gtag-init" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R1HDPDN1XG');
+          `}
+        </Script>
+
         <Navbar />
+
         {children}
+            
         <Footer />
       </body>
     </html>
