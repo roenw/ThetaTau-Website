@@ -137,3 +137,34 @@ p {
   margin-left: 0px;
   margin-right: 0px;
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logos-slide {
+  width: 100%;
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.logos-slide * {
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  margin: 0 20px;
+}
