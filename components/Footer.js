@@ -49,9 +49,26 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="mb-4">
             <h2 className="mb-6 text-sm font-semibold text-neutral-100 uppercase">
               Links{" "}
+            </h2>
+            <ul className="text-neutral-400 space-y-2">
+              <li>
+                <Link href="/about" className="hover:underline">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/rush" className="hover:underline">
+                  Rush
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-6 text-sm font-semibold text-neutral-100 uppercase">
+              Pillars{" "}
             </h2>
             <ul className="space-y-4 text-neutral-400">
               <li>
@@ -70,11 +87,6 @@ const Footer = () => {
               <li>
                 <Link href="/pillars#service" className="hover:underline">
                   Service
-                </Link>
-              </li>
-              <li>
-                <Link href="/rush" className="hover:underline">
-                  Rush
                 </Link>
               </li>
             </ul>
