@@ -81,12 +81,15 @@ export default function Pillars() {
     setCurrentIndex(newIndex);
   };
 
-
   return (
     <>
-      <div className="relative w-screen h-[400px] bg-red-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
-      text-white flex flex-col items-start justify-end h-[100%] pb-10 font-sans">
-        <h1 className={`text-white text-[13vw] md:text-[95px] ml-[5%] font-bold`}>
+      <div
+        className="relative w-screen h-[400px] bg-red-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
+      text-white flex flex-col items-start justify-end h-[100%] pb-10 font-sans"
+      >
+        <h1
+          className={`text-white text-[13vw] md:text-[95px] ml-[5%] font-bold`}
+        >
           Pillars
         </h1>
         <h2 className="text-white text-[4vw] md:text-[30px] ml-[5%]">
@@ -96,10 +99,10 @@ export default function Pillars() {
 
       <div className="w-[100%]">
         <div
-          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-20 md:p-10 sm:p-5 flex-col"
+          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-10 md:p-10 sm:p-5 flex-col"
           id="professionalism"
         >
-          <div className="lg:w-[30%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
+          <div className="lg:w-[60%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
             <h1 className="text-[30px] font-extrabold text-[#7a0104]">
               Professionalism
             </h1>
@@ -111,27 +114,27 @@ export default function Pillars() {
               will last a lifetime.
             </p>
           </div>
-          <div className="lg:w-[70%] w-[100%] p-5 lg:p-0">
+          <div className="lg:w-[40%] w-[100%] p-5 lg:p-0 lg:flex lg:flex-row lg:justify-end lg:items-center  lg:border-l-8 lg:border-[#7a0104]">
             <Image
               src={Professional_ChiLine}
               alt="Chiline"
-              className=" w-[100%]"
+              className=" lg:w-[90%] lg:h-[auto] md:w-[80%] w-[100%]"
             />
           </div>
         </div>
 
         <div
-          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-20 md:p-10 sm:p-5 flex-col-reverse bg-[#e0e0e0]"
+          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-10 md:p-10 sm:p-5 flex-col-reverse bg-[#e0e0e0]"
           id="brotherhood"
         >
-          <div className="lg:w-[70%] w-[100%] p-5 lg:p-0">
+          <div className="lg:w-[40%] w-[100%] p-5 lg:p-0 lg:flex lg:flex-row lg:justify-start lg:items-center lg:border-r-8 lg:border-[#7a0104]">
             <Image
               src={Brotherhood_Cookout}
               alt="Service"
-              className=" w-[100%]"
+              className=" lg:w-[90%] lg:h-[auto] w-[100%]"
             />
           </div>
-          <div className="lg:w-[30%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
+          <div className="lg:w-[60%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
             <h1 className="text-[30px] font-extrabold text-[#7a0104]">
               Brotherhood
             </h1>
@@ -148,10 +151,10 @@ export default function Pillars() {
         </div>
 
         <div
-          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-20 md:p-10 sm:p-5 flex-col"
+          className="w-[100%] flex lg:flex-row lg:gap-10 lg:p-10 md:p-10 sm:p-5 flex-col"
           id="service"
         >
-          <div className="lg:w-[30%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
+          <div className="lg:w-[60%] flex flex-col gap-3 items-left justify-center w-[100%] p-5 lg:p-0 md:p-0">
             <h1 className="text-[30px] font-extrabold text-[#7a0104]">
               Service
             </h1>
@@ -163,11 +166,11 @@ export default function Pillars() {
               drives.
             </p>
           </div>
-          <div className="lg:w-[70%] w-[100%] p-5 lg:p-0">
+          <div className="lg:w-[40%] w-[100%] p-5 lg:p-0 lg:flex lg:flex-row lg:justify-end lg:items-center lg:border-l-8 lg:border-[#7a0104]">
             <Image
               src={Service_BikeSaviors}
               alt="Service"
-              className=" w-[100%]"
+              className=" lg:w-[90%] lg:h-[auto] w-[100%]"
             />
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,6 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "loop-scroll": "loop-scroll 50s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
       colors: {
         "tt-dark-red": "#ad2831",
         "tt-gold": "#e3b11a",
