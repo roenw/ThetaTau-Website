@@ -41,14 +41,16 @@ export default function About() {
 
   return (
     <>
-      <div className="relative w-screen h-[100vh] bg-pillars-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg">
-        <div className="text-white flex flex-col items-center justify-end gap-3 w-[100%] h-[100%] py-[12vw] lg:py-[2vw] font-sans backdrop-brightness-75">
-          <h1 className="text-white text-9xl font-bold">About</h1>
-          <p className="text-white text-3xl font-extralight">
-            Learn more about the Delta Gamma Chapter
-          </p>
-        </div>
+      <div className="relative w-screen h-[400px] bg-grey-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l
+      text-white flex flex-col items-start justify-end h-[100%] pb-10 font-sans">
+        <h1 className={"text-black text-[13vw] md:text-[95px] ml-[5%] font-bold"}>
+          About
+        </h1>
+        <h2 className="text-black text-[4vw] md:text-[30px] ml-[5%]">
+          Learn more about the Delta Gamma Chapter
+        </h2>
       </div>
+
       <div className="w-[100%] bg-white flex flex-col">
         <div className="w-[100%] flex flex-col lg:flex-row gap-3  items-center py-5 px-10">
           <div className="lg:w-[40%]  flex flex-col gap-3 w-[100%]">
@@ -65,7 +67,7 @@ export default function About() {
             </p>
             <p className="w-[100%] text-lg lg:text-xl">
               The Delta Gamma chapter was founded May 6th, 1995 at Arizona State
-              University (ASU). We have approximately 40 student members, and
+              University (ASU). We have over 50 active student members, and
               over 400 total members.
             </p>
           </div>
@@ -157,7 +159,7 @@ export default function About() {
         </div>
         <div className="w-[100%] flex flex-col gap-5 justify-center items-center bg-[#e0e0e0] py-5 px-10">
           <h1 className="text-2xl font-bold text-[#7a0104]">
-            Where Our Members Work
+            We Work At
           </h1>
           <div className="logos">
             <div className="logos-slide">
