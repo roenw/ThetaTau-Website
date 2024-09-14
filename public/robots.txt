@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thetatau-dg.org
+
+# Sitemaps
+Sitemap: https://thetatau-dg.org/sitemap.xml
