@@ -30,6 +30,7 @@ const config: Config = {
         "grey-parallax": "url('./../public/RushBackground.png')",
         "red-parallax": "url('./../public/RedBackground.png')",
         "yellow-parallax": "url('./../public/AboutBackground.png')",
+        "orange-parallax": "url('./../public/OrangeBackground.png')",
       },
       zIndex: {
         "100": "100",
