@@ -64,6 +64,11 @@ const Footer = () => {
                   Rush
                 </Link>
               </li>
+              <li>
+                <Link href="/regionals" className="hover:underline">
+                  Regionals
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
