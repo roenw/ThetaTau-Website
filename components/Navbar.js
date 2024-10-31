@@ -30,6 +30,11 @@ const Navbar = () => {
       linkname: "Rush",
       target: "/rush",
     },
+    {
+      id: 5,
+      linkname: "Regionals",
+      target: "/regionals",
+    }
   ];
 
   return (
