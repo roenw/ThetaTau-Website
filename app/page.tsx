@@ -1,308 +1,260 @@
-"use client";
-
 import Image from "next/image";
-import React, { useState } from "react";
+import { Bungee } from "next/font/google";
 
-export default function Rush() {
-  const [faq1Open, setFaq1Open] = useState(false);
-  const [faq2Open, setFaq2Open] = useState(false);
-  const [faq3Open, setFaq3Open] = useState(false);
-  const [faq4Open, setFaq4Open] = useState(false);
-  const [faq5Open, setFaq5Open] = useState(false);
-  const [faq6Open, setFaq6Open] = useState(false);
-  //#E2990D
+import { FaUsers, FaGraduationCap, FaBuilding } from "react-icons/fa"
+
+const bungee = Bungee({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-bungee",
+  weight: "400"
+});
+
+export default function Home() {
   return (
-    <>
-      <div className="relative w-screen h-[400px] bg-orange-parallax bg-fixed bg-no-repeat bg-cover bg-center z-0 parallax-bg align-l">
-        <div className="text-white flex flex-col items-start justify-end gap-5 w-[100%] h-[100%] pb-10 font-sans">
-          <h1 className="text-black text-[13vw] md:text-[95px] ml-[5%] font-bold">
-            Regionals
+    <main>
+      {/* Hero Image */}
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "900px",
+        }}
+      >
+        {/* Home Page Picture */}
+        <Image
+          src="/TauGamma-Gradient.jpg" // Image source path
+          layout="fill" // Fill the container
+          objectFit="cover" // Cover the container while maintaining aspect ratio
+          alt="ASU Theta Tau members standing in professional dress" // Alt text for accessibility
+          style={{ filter: "brightness(60%)", zIndex: -1 }} // Lower opacity to 70%
+        />
+        {/* Theta Tau Text */}
+        <div
+          style={{
+            position: "absolute",
+            top: "300px", // Adjust as needed
+            left: "50%",
+            transform: "translateX(-50%)",
+            textAlign: "center",
+            fontSize: "75px", // Relative to viewport width (adjust as needed)
+            lineHeight: "80%"
+          }}
+        >
+          <h1 className={`${bungee.className} antialiased text-tt-dark-red font-weight-bold`}>
+            Forging Future Engineers
           </h1>
-          <h2 className="text-black text-[4vw] md:text-[30px] ml-[5%]">
-            Fall '24 Southwest Regional Conference, Delta Gamma Chapter, ASU
-          </h2>
+          <p className="pt-10 text-white leading-tight">
+            Nation's Foremost Professional Engineering Fraternity
+          </p>
+        </div>
+
+        {/* Chapter Name and Location */}
+        <div
+          className="lg:top-[500px]"
+          style={{
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)",
+            color: "white",
+            backgroundColor: "rgba(0, 0, 0, 0)"
+          }}
+        >
         </div>
       </div>
-      <div className="flex flex-col">
-        {/* Rush Events Section */}
-        <div className="w-screen bg-[#e0e0e0]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <div>
-              <h1 className="text-[#E2990D] text-[30px] lg:text-3xl font-bold mt-10 pl-10">
-                Southwestern Regional Conference Events
-              </h1>
-              <p className="text-[#171717] text-justify text-[15px] lg:text-xl p-10 border-l-4 border-[#7a0104] m-10">
-                Game Night - Wednesday August 28, 7:30PM - GWC487
-                <br />
-                <br />
-                Donuts and Dog Toys - Thursday August 29, 7:30PM - GWC487
-                <br />
-                <br />
-                Field Day - Friday August 30, 6:30PM - Tooker Lawn
-                <br />
-                <br />
-                Engineering Challenge - Thursday September 5, 7:30PM - GWC487
-                <br />
-                <br />
-                Meet the House - Friday September 6, 6:30PM - GWC487
-                <br />
-                <br />
+
+      {/* Who We Are Section */}
+      <div
+        className="py-10 bg-black"
+      >
+        <h1 className={`${bungee.className} antialiased text-tt-dark-red text-center font-weight-bold pb-10`}>
+          Who We Are
+        </h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="px-[60px] lg:px-[100px]">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "left",
+                alignItems: "center"
+              }}
+            >
+              <Image
+                className="hidden pr-5 lg:inline"
+                src="/white_bar.png"
+                alt=""
+                width="200"
+                height="15"
+              />
+              <span className="ml-auto mr-auto lg:ml-0 text-white text-[20px]">
+                Since 1904
+              </span>
+            </div>
+            <h1 className={`${bungee.className} text-center lg:text-left text-5xl lg:text-[58px] antialiased text-tt-dark-red font-weight-bold pb-4`}>
+                We Are Theta Tau
+            </h1>
+            <p className="text-white pb-8">
+              Theta Tau is a co-ed professional engineering fraternity here at Arizona State University. We are a close knit brotherhood that encourages our members to excel professionally and give back to the surrounding community.
+            </p>
+              <div className="grid grid-cols-1 gap-4">
+                <a href="/rush" className="tt-button-primary hover:bg-tt-dark-red hover:text-tt-gold text-center">
+                  Rush Theta Tau
+                </a>
+                <a href="/about" className="tt-button-secondary hover:bg-tt-gold hover:text-black text-center">
+                  Learn More
+                </a>
+              </div>
+          </div>
+          <div>
+            <Image
+              className="ml-auto mr-auto"
+              src="/Polaroids.png"
+              width="583"
+              height="454"
+              alt="Polaroid photos of Theta Tau members"
+            />
+          </div>
+        </div>
+      </div>
+      {/* Our Values Section */}
+      <div className="text-center bg-[#fdfcdc] rounded py-10">
+        <h1 className={`${bungee.className} text-tt-dark-red`}>
+          Our Values
+        </h1>
+
+        {/* Professionalism */}
+        <div
+          className="bg-black ml-auto mr-auto"
+          style={{
+            width: "80%",
+            borderRadius: "10px"
+          }}
+        >
+          <div className="m-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <div className="mb-6 lg:my-10 lg:col-span-7">
+              <h2 className={`${bungee.className} text-[6vw] md:text-[40px] text-tt-dark-red text-center my-5`}>
+                Professionalism
+              </h2>
+              <p className="text-[15px] lg:text-[20px] text-white text-center mb-10">
+                Theta Tau cultivates and enhances engineers' communication, problem-solving, and leadership skills, empowering them to excel professionally, contribute to their communities, and lead impactful careers and lives.
               </p>
+              <a href="/pillars#professionalism" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5">
+                Learn More
+              </a>
             </div>
-
-            <div className="force-align-center">
-              <div>
-                <div className="border-8 border-[#7a0104] m-[40px]">
-                  <Image
-                    alt=""
-                    src="/RegionalsSchedule.png"
-                    width="600"
-                    height="750"
-                  />
-                </div>
-              </div>
+            <div className="mt-6 lg:my-10 lg:col-span-5 force-align-center">
+              <Image
+                alt=""
+                src="/Homepage-Professional.png"
+                width="449"
+                height="334"
+                className="mb-5"
+              />
             </div>
           </div>
         </div>
 
-        {/* FAQ Section */}
-        <div className="w-screen bg-[#FFFFFF]">
-          <h1 className="text-[#7a0104] text-[30px] lg:text-3xl font-bold mt-10 pl-10 gap-5">
-            Regionals FAQs
-          </h1>
-
-          {/* Dropdown 1 */}
-          <div className="pl-10 pr-10 mt-5">
-            <button
-              onClick={() => setFaq1Open(!faq1Open)}
-              className="w-full h-[50px] flex justify-between items-center px-4 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300"
-            >
-              What is Rush?
-              <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
-                  faq1Open ? "rotate-180" : ""
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {faq1Open && (
-              <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                Rush is a two-week period full of fun events to help you get to
-                know Theta Tau. We host info sessions, game nights, and much
-                more! Attending rush events is the first step in becoming a
-                member of Theta Tau. All events are FREE, and often have free
-                food. So stop by and have some fun!
-              </div>
-            )}
-          </div>
-
-          {/* Dropdown 2 */}
-          <div className="pl-10 pr-10 mt-5">
-            <button
-              onClick={() => setFaq2Open(!faq2Open)}
-              className="w-full h-[50px] flex justify-between items-center px-4 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300"
-            >
-              What is Pledging?
-              <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
-                  faq2Open ? "rotate-180" : ""
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {faq2Open && (
-              <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                Pledging is your chance to determine if Theta Tau is the right
-                fit for you, and prepares you for becoming a member. Pledging is
-                the next step after rush, and is a semester long process. You
-                will get to meet all its members, learn about the history of the
-                chapter and the fraternity, participate in professional and
-                service events, and form bonds which will last the rest of your
-                life. You will help pick your ‘big brother’ who is an active
-                member that will guide you through the pledging process, and for
-                many years to come.
-              </div>
-            )}
-          </div>
-
-          {/* Dropdown 3 */}
-          <div className="pl-10 pr-10 mt-5">
-            <button
-              onClick={() => setFaq3Open(!faq3Open)}
-              className="w-full h-[50px] flex justify-between items-center px-4 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300"
-            >
-              Am I eligible to join?
-              <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
-                  faq3Open ? "rotate-180" : ""
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {faq3Open && (
-              <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                You must meet the following requirements at the time of
-                initiation
-                <br />
-                <br />
-                -Be within an ABET accredited major at Arizona State University
-                <br />
-                -Have at least 6 months before graduation
-                <br />
-                -Have a minimum (passing GPA) of 2.0
-                <br />
-                -Not be a member of a competing Fraternity or Sorority
-                <br />
-                -At least 18 years old
-                <br />
-              </div>
-            )}
-          </div>
-
-          {/* Dropdown 4 */}
-          <div className="pl-10 pr-10 mt-5">
-            <button
-              onClick={() => setFaq4Open(!faq4Open)}
-              className="w-full h-[50px] flex justify-between items-center px-4 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300"
-            >
-              What if I change my major from engineering?
-              <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
-                  faq4Open ? "rotate-180" : ""
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {faq4Open && (
-              <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                As long as you are enrolled in engineering at the time of
-                initiation, you will be a member of Theta Tau for life. While we
-                focus on engineering, and most of our members complete degrees
-                in engineering, we do have members change majors.
-              </div>
-            )}
-          </div>
-
-          {/* Dropdown 5 */}
-          <div className="pl-10 pr-10 mt-5">
-            <button
-              onClick={() => setFaq5Open(!faq5Open)}
-              className="w-full h-[50px] flex justify-between items-center px-4 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300"
-            >
-              How is Theta Tau different than an honors society?
-              <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
-                  faq5Open ? "rotate-180" : ""
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {faq5Open && (
-              <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                Honor societies are great for being around people that share an
-                academic interest with you. These are excellent groups for
-                furthering your interests in a topic, but the benefits often
-                stop there. Because Theta Tau is a brotherhood, you will join a
-                group of people that take friendships beyond the classroom and
-                even the campus, and treat you like part of a family. When you
-                join Theta Tau you will make friendships that will last the rest
-                of your life, anywhere you go.
-              </div>
-            )}
-          </div>
-
-          {/* Dropdown 6 */}
-          <div className="pl-10 pr-10 mt-5">
-            <button
-              onClick={() => setFaq6Open(!faq6Open)}
-              className="w-full h-[50px] flex justify-between items-center px-4 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300"
-            >
-              How do you pronounce “Theta Tau”?
-              <svg
-                className={`w-[30px] h-[30px] transform transition-transform duration-300 ${
-                  faq6Open ? "rotate-180" : ""
-                }`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {faq6Open && (
-              <div className="mt-2 p-4 bg-gray-100 rounded-md text-gray-700">
-                THAY-Ta TAH. Notice the pronunciation of "Tau" differs from the
-                typical pronunciation you might hear in a Math class. This is
-                not by mistake, but rather a Greek Grammatical rule.
-              </div>
-            )}
+        {/* Brotherhood */}
+        <div
+          className="bg-black ml-auto mr-auto"
+          style={{
+            width: "80%",
+            borderRadius: "10px"
+          }}
+        >
+          <div className="m-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <div className="mt-6 lg:my-10 lg:col-span-5 force-align-center">
+              <Image
+                alt=""
+                src="/Homepage-Brotherhood.png"
+                width="449"
+                height="334"
+              />
+            </div>
+            <div className="mb-6 lg:my-10 lg:col-span-7">
+              <h2 className={`${bungee.className} text-[6vw] md:text-[40px] text-tt-dark-red text-center my-5`}>
+                Brotherhood
+              </h2>
+              <p className="text-white text-center mb-10">
+                Theta Tau fosters a strong sense of brotherhood by uniting members through shared values, collaborative efforts, and lifelong friendships, creating a supportive and empowering community for aspiring engineers.
+              </p>
+              <a href="/pillars#brotherhood" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5"> {/* Eventually change this to "meet the brothers" */}
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="mt-5"></div>
+        {/* Service */}
+        <div
+          className="bg-black ml-auto mr-auto"
+          style={{
+            width: "80%",
+            borderRadius: "10px"
+          }}
+        >
+          <div className="m-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <div className="mb-6 lg:my-10 lg:col-span-7">
+              <h2 className={`${bungee.className} text-[6vw] md:text-[40px] text-tt-dark-red text-center my-5`}>
+                Service
+              </h2>
+              <p className="text-white text-center mb-10">
+                Theta Tau members exemplify a strong sense of service by consistently dedicating their time and skills to community outreach and philanthropic initiatives, striving to create lasting and meaningful positive change in the world around them.
+              </p>
+              <a href="/pillars#service" className="tt-button-secondary hover:bg-tt-gold hover:text-black mr-5">
+                Learn More
+              </a>
+            </div>
+            <div className="mt-6 lg:my-10 lg:col-span-5 force-align-center">
+              <Image
+                alt=""
+                src="/Homepage-Service.png"
+                width="449"
+                height="334"
+                className="mb-5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <hr
+          className="hidden mr-auto ml-auto lg:block"
+          style={{
+            width: "50%",
+            height: "6px",
+            backgroundColor: "#ad2730"
+          }} 
+        />
+
+
+        <div
+          className="bg-black mr-auto ml-auto my-5"
+          style={{
+            width: "60%",
+            color: "white",
+            borderRadius: "10px"
+          }}
+        >
+          <div className="m-10 grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="mb-6 lg:my-10 lg:col-span-1">
+              <FaUsers className="ml-auto mr-auto" color={"#e2ab16ff"} size={80} />
+              <h2 className={`${bungee.className} text-center`}>50+</h2>
+              <h3 className="text-center">ACTIVES</h3>
+            </div>
+            <div className="ml-auto mr-auto mb-6 lg:my-10 lg:col-span-1">
+              <FaGraduationCap className="ml-auto mr-auto" color={"#e2ab16ff"} size={80} />
+              <h2 className={`${bungee.className} text-center`}>200+</h2>
+              <h3 className="text-center">ALUMNI</h3>
+            </div>
+            <div className="ml-auto mr-auto mb-6 lg:my-10 lg:col-span-1">
+              <FaBuilding className="ml-auto mr-auto" color={"#e2ab16ff"} size={75} />
+              <h2 className={`${bungee.className} text-center`}>90+</h2>
+              <h3 className="text-center">CHAPTERS</h3>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </main>
   );
 }
