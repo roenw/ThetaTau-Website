@@ -34,6 +34,11 @@ const Navbar = () => {
       id: 5,
       linkname: "Regionals",
       target: "/regionals",
+    },
+    {
+      id: 6,
+      linkname: "Merch",
+      target: "/merch",
     }
   ];
 
