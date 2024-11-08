@@ -25,6 +25,11 @@ const nextConfig = {
         destination: 'https://thetatau-dg.printify.me/',
         permanent: true,
       },
+      {
+        source: '/2dg4u',
+        destination: 'https://2dg4u.printify.me/',
+        permanent: true,
+      },
     ];
   },
 };
