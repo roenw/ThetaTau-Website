@@ -18,6 +18,15 @@ const nextConfig = {
     });
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/merch',
+        destination: 'https://thetatau-dg.printify.me/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
